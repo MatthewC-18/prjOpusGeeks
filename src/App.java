@@ -38,7 +38,9 @@ public class App {
         oEjercicio4.Ejercicio4While(nPosiciones);
         System.out.println();
         //EJRCICIO 5
-
+        Ejercicio5 oEjercicio5 = new Ejercicio5();
+        System.out.println("\n serie 5 con for:  ");
+        oEjercicio5.Ejercicio5For(nPosiciones);
 
         //EJERCICIO 6
 
