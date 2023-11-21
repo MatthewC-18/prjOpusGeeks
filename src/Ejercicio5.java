@@ -1,8 +1,18 @@
+/**
+*Copyright (C) 2K23, grupo2
+*(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
+*@version_1.0.
+*@author Ismael Freire
+*FECHA: 21/11/2023. 
+*/
+
+/**
+ * La serie presenta los numeros primos
+*/
+
 public class Ejercicio5 {
-    public static void main(String[] args) {
-        // Utilizamos un bucle for para imprimir los primeros 10 números
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
-        }
+
+    public void Ejercicio5For (int ){
+
     }
 }
