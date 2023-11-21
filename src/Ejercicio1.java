@@ -1,23 +1,21 @@
 /*Copyrigh  (C) 
  * matthewcedeno92@gmail.com
+ * Matthew Cedeno
  * Version 1.0
- */
-/*
- * @author
  */
 import java.util.Scanner;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el número de términos para la serie S1: ");
+        System.out.print("Ingrese el número de términos para la serie : ");
         int n = scanner.nextInt();
         generarSerieS1ConFor(n);
         scanner.close();
     }
 
     private static void generarSerieS1ConFor(int n) {
-        System.out.println("S1 (for):");
+        System.out.println(" (for):");
         int a = 0, b = 1;
         for (int i = 0; i < n; i++) {
             System.out.print(a + " ");
@@ -37,10 +35,9 @@ public class Ejercicio1 {
             d = temp + d;
             j++;
         } while (j < n);
-
         System.out.println();
 
-        // Corrige el nombre de la variable de 'k' a 'i'
+        System.out.println("S1 (While)");
         int i = 0;
         int e = 0, f = 1;
 
