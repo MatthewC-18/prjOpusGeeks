@@ -1,6 +1,75 @@
+import java.util.Scanner;
 
 public class App {
- public static void main(String[] args) {
-    
- }
+    public static void main(String[] args) throws Exception {
+        System.out.println("GRUPO NUMERO 2 - Opus Geeks");
+        System.out.println("INGRESE UN NUMERO: ");
+        Scanner entrada = new Scanner(System.in);
+        int nPosiciones = Integer.parseInt(entrada.nextLine());
+        //Ejercicio 1
+
+
+
+
+
+
+        //Ejercicio 2
+
+
+
+
+
+        //EJERCICIO 3
+        Ejercicio3 oEjercicio3 = new Ejercicio3();
+        System.out.println("\n serie 3 con for:  ");
+        oEjercicio3.Ejercicio3For(nPosiciones);
+        System.out.println("\n serie 3 con do:  ");
+        oEjercicio3.Ejercicio3Do(nPosiciones);
+        System.out.println("\n serie 3 con while:  ");
+        oEjercicio3.Ejercicio3While(nPosiciones);
+        System.out.println();
+        //EJERCICIO 4
+        Ejercicio4 oEjercicio4 = new Ejercicio4();
+        System.out.println("\n serie 4 con for:  ");
+        oEjercicio4.Ejercicio4For(nPosiciones);
+        System.out.println("\n serie 4 con do:  ");
+        oEjercicio4.Ejercicio4Do(nPosiciones);
+        System.out.println("\n serie 4 con while:  ");
+        oEjercicio4.Ejercicio4While(nPosiciones);
+        System.out.println();
+        //EJRCICIO 5
+
+
+        //EJERCICIO 6
+
+
+
+
+        //EJERCICIO 7
+
+
+
+
+
+        //EJERCICIO 8
+
+
+
+
+        //EJERCICIO 9
+
+
+
+
+        //EJERCICIO 10
+
+
+
+
+
+        //EJERCICIO 11
+
+
+
+    }
 }
