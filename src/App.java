@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, Matthew!");
-    }
+   public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+}
 }
