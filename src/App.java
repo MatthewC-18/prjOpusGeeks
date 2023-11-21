@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -7,6 +7,10 @@ public class App {
         Scanner entrada = new Scanner(System.in);
         int nPosiciones = Integer.parseInt(entrada.nextLine());
         //Ejercicio 1
+
+
+
+
 
 
         //Ejercicio 2
@@ -64,6 +68,8 @@ public class App {
 
 
         //EJERCICIO 11
+
+
 
     }
 }
