@@ -13,6 +13,6 @@
 public class Ejercicio5 {
 
     public void Ejercicio5For (int ){
-
+        Scanner scanner = new ;
     }
 }
