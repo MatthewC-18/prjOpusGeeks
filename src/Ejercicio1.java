@@ -28,31 +28,32 @@ public class Ejercicio1 {
         System.out.println();
 
         System.out.println("S1 (do-while):");
-        int i = 0;
-        a = 0;
-        b = 1;
+        int j = 0;
+        int c = 0, d = 1;
         do {
-            System.out.print(a + " ");
-            int temp = a;
-            a = b;
-            b = temp + b;
-            i++;
-        } while (i < n);
-        
-        System.out.println();  // Agrega este salto de línea
-
-        System.out.println("S1 (While):");
-        int j = 1;  // Cambié el nombre de la variable a j
-        while (j <= n) {
-            if (j % 2 == 1) {
-                System.out.print((2 * j - 1) + " ");
-            } else {
-                System.out.print("0 ");
-            }
-
+            System.out.print(c + " ");
+            int temp = c;
+            c = d;
+            d = temp + d;
             j++;
+        } while (j < n);
+
+        System.out.println();
+
+        // Corrige el nombre de la variable de 'k' a 'i'
+        int i = 0;
+        int e = 0, f = 1;
+
+        while (i < n) {
+            System.out.print(e + " ");
+
+            int temp = e;
+            e = f;
+            f = temp + f;
+
+            i++;
         }
+
+        System.out.println();
     }
 }
-
-
