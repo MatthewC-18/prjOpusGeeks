@@ -1,8 +1,9 @@
 /*Copyrigh  (C) 
  * matthewcedeno92@gmail.com
  * Matthew Cedeno
- * Version 1.0
+ * Version 2.0
  */
+
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -10,11 +11,11 @@ public class Ejercicio1 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese el número de términos para la serie : ");
         int n = scanner.nextInt();
-        generarSerieS1ConFor(n);
+        generarSerieConBucles(n);
         scanner.close();
     }
 
-    private static void generarSerieS1ConFor(int n) {
+    private static void generarSerieConBucles(int n) {
         System.out.println(" (for):");
         int a = 0, b = 1;
         for (int i = 0; i < n; i++) {
