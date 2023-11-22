@@ -44,7 +44,7 @@ public class App {
         System.out.println("\n serie 5 con do:  ");
         oEjercicio5.Ejercicio5Do(nPosiciones);
         System.out.println("\n serie 5 con while: ");
-        //oEjercicio5.Ejercicio5While(nPosiciones);
+        oEjercicio5.Ejercicio5While(nPosiciones);
         //EJERCICIO 6
 
 
