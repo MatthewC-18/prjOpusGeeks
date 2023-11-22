@@ -7,6 +7,14 @@ public class App {
         Scanner entrada = new Scanner(System.in);
         int nPosiciones = Integer.parseInt(entrada.nextLine());
         //Ejercicio 1
+        Ejercicio1 oEjercicio1 =new Ejercicio1();
+        System.out.println("\n serie 1 con for:  ");
+        oEjercicio1.Ejercicio1For(nPosiciones);
+        System.out.println("\n serie 1 con do:  ");
+        oEjercicio1.Ejercicio1Do(nPosiciones);
+        System.out.println("\n serie 1 con while:  ");
+        oEjercicio1.Ejercicio1While(nPosiciones);
+        System.out.println();
         
 
 
