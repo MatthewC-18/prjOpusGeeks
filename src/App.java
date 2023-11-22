@@ -7,14 +7,20 @@ public class App {
         Scanner entrada = new Scanner(System.in);
         int nPosiciones = Integer.parseInt(entrada.nextLine());
         //Ejercicio 1
-
-
+        
 
 
 
 
         //Ejercicio 2
-
+        Ejercicio2 oEjercicio2 = new Ejercicio2();
+        System.out.println("\n serie 2 con for:  ");
+        oEjercicio2.Ejercicio2For(nPosiciones);
+        System.out.println("\n serie 2 con do:  ");
+        oEjercicio2.Ejercicio2Do(nPosiciones);
+        System.out.println("\n serie 2 con while:  ");
+        oEjercicio2.Ejercicio2While(nPosiciones);
+        System.out.println();
 
 
 
