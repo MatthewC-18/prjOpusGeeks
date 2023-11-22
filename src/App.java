@@ -41,7 +41,10 @@ public class App {
         Ejercicio5 oEjercicio5 = new Ejercicio5();
         System.out.println("\n serie 5 con for:  ");
         oEjercicio5.Ejercicio5For(nPosiciones);
-
+        System.out.println("\n serie 5 con do:  ");
+        oEjercicio5.Ejercicio5Do(nPosiciones);
+        System.out.println("\n serie 5 con while: ");
+        //oEjercicio5.Ejercicio5While(nPosiciones);
         //EJERCICIO 6
 
 

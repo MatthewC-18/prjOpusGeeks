@@ -21,12 +21,12 @@ public class Ejercicio5 {
         /**
          * El ciclo for recorrera desde el 2 hasta el numero ingresado por consola
          */
-        for(int i=2; i < nPosiciones; i++){
+        for(int contador1=2; contador1 < nPosiciones; contador1++){
             /**
              * Luego el if determinará si es un numero primo y lo imprimirá 
              */
-            if (esPrimo(i)) {
-                System.out.print(i);
+            if (esPrimo(contador1)) {
+                System.out.print(contador1);
                 System.out.print(" ");
             }
         }
@@ -51,25 +51,27 @@ public class Ejercicio5 {
     * Este codigo utiliza un bucle "do while"
     */
 
-    /*public void Ejercicio5Do (int nPosiciones){
-        int contador=0;
-        //int numero=2;
+    public void Ejercicio5Do (int nPosiciones){
+        int contador2=2;
         do{
-            if(esPrimo(primerNum)){
-                //System.out.print();
+            if(esPrimo(contador2)){
+                System.out.print(contador2);
+                System.out.print(" ");
             }
-            contador++;
-        }while (contador < nPosiciones);
-    }*/
+            contador2++;
+        }while (contador2 < nPosiciones);
+    }
 
-    /*public boolean esPrimo1(int num){
-        int aux;
-        for(int contador=primerNum; contador<num-1; contador++){
-            aux=num%contador;
-            if (aux==0) {
-                return false;
+    /**
+    * Este codigo utiliza un bluce "while" 
+    */
+    /*public void Ejercicio5While (int nPosiciones){
+        int contador3=2;
+        while (contador3 < nPosiciones){
+            if(esPrimo(contador3)){
+                System.out.print(contador3);
+                System.out.print(" ");
             }
         }
-        return true;
-    }*/
+    }  */ 
 }
