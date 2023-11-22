@@ -62,6 +62,7 @@ public class App {
         oEjercicio5.Ejercicio5Do(nPosiciones);
         System.out.println("\nSerie 5 con while: ");
         oEjercicio5.Ejercicio5While(nPosiciones);
+        System.out.println();
 
         // Ejercicio 6
         Ejercicio6 oEjercicio6 = new Ejercicio6();
@@ -71,6 +72,7 @@ public class App {
         oEjercicio6.Ejercicio6Do(nPosiciones);
         System.out.println("\nSerie 6 con while: ");
         oEjercicio6.Ejercicio6While(nPosiciones);
+        System.out.println();
         // Ejercicio 7
         // ...
 
