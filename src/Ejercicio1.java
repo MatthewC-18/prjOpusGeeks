@@ -4,54 +4,58 @@
  * Version 2.0
  */
 
-import java.util.Scanner;
-
-public class Ejercicio1 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el número de términos para la serie : ");
-        int n = scanner.nextInt();
-        generarSerieConBucles(n);
-        scanner.close();
-    }
-
-    private static void generarSerieConBucles(int n) {
-        System.out.println(" (for):");
+public class Ejercicio1{
+    public void  Ejercicio1For (int nPosiciones){
+        /*
+         * Declaracion de variables
+         */
         int a = 0, b = 1;
-        for (int i = 0; i < n; i++) {
+        /*
+         * Inicializacion de variables
+         */
+        for (int i = 1; i <= nPosiciones; i++) {
             System.out.print(a + " ");
             int temp = a;
             a = b;
             b = temp + b;
         }
-        System.out.println();
-
-        System.out.println("S1 (do-while):");
+    
+    }
+    public void  Ejercicio1Do (int nPosiciones){
+        /*
+         * Declaracion de variables
+         */
         int j = 0;
         int c = 0, d = 1;
+        /*
+         * Inicializacion de variables
+         */
         do {
             System.out.print(c + " ");
             int temp = c;
             c = d;
             d = temp + d;
             j++;
-        } while (j < n);
-        System.out.println();
-
-        System.out.println("S1 (While)");
-        int i = 0;
-        int e = 0, f = 1;
-
-        while (i < n) {
-            System.out.print(e + " ");
-
-            int temp = e;
-            e = f;
-            f = temp + f;
-
-            i++;
-        }
-
+        } while (j < nPosiciones);
         System.out.println();
     }
+    public void  Ejercicio1While (int nPosiciones){
+        /*
+         * Declaracion de variables
+         */
+        int a = 0, b = 1;
+        /*
+         * Inicializacion de variables
+         */
+        int i = 1;
+        while (i <= nPosiciones) {
+            System.out.print(a + " ");
+            int temp = a;
+            a = b;
+            b = temp + b;
+            i++;
+        }
+    }
+
+
 }
