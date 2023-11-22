@@ -76,6 +76,7 @@ public class Ejercicio5 {
                 System.out.print(contador3);
                 System.out.print(" ");
             }
+            contador3++;
         }
     }
 }
