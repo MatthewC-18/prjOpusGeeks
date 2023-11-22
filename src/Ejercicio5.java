@@ -1,7 +1,7 @@
 /**
 *Copyright (C) 2K23, grupo2
 *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
-*@version_1.0.
+*@version 1.0.
 *@author Ismael Freire
 *FECHA: 21/11/2023. 
 */
@@ -65,7 +65,7 @@ public class Ejercicio5 {
     /**
     * Este codigo utiliza un bluce "while" 
     */
-    /*public void Ejercicio5While (int nPosiciones){
+    public void Ejercicio5While (int nPosiciones){
         int contador3=2;
         while (contador3 < nPosiciones){
             if(esPrimo(contador3)){
@@ -73,5 +73,5 @@ public class Ejercicio5 {
                 System.out.print(" ");
             }
         }
-    }  */ 
+    }  
 }
