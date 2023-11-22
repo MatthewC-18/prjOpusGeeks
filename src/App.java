@@ -64,8 +64,13 @@ public class App {
         oEjercicio5.Ejercicio5While(nPosiciones);
 
         // Ejercicio 6
-        // ...
-
+        Ejercicio6 oEjercicio6 = new Ejercicio6();
+        System.out.println("\nSerie 6 con for: ");
+        oEjercicio6.Ejercicio6For(nPosiciones);
+        System.out.println("\nSerie 6 con do: ");
+        oEjercicio6.Ejercicio6Do(nPosiciones);
+        System.out.println("\nSerie 6 con while: ");
+        oEjercicio6.Ejercicio6While(nPosiciones);
         // Ejercicio 7
         // ...
 
