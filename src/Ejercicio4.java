@@ -98,6 +98,7 @@ public class Ejercicio4 {
 */
             int signumerador = numerador1 + numerador2;
             numerador1 = numerador2;
+            numerador2 = signumerador;
             denominador1 += salto;
             i++;
         }   
