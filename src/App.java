@@ -79,13 +79,13 @@ public class App {
         // ...
 
         // Ejercicio 11
-        Ejercicio11 oEjercicio11 = new Ejercicio11();
+        Ejercicio12 oEjercicio11 = new Ejercicio12();
         System.out.println("\nSerie 11 con for: ");
-        oEjercicio11.Ejercicio11For(nPosiciones);
+        oEjercicio11.Ejercicio12For(nPosiciones);
         System.out.println("\nSerie 11 con do: ");
-        oEjercicio11.Ejercicio11Do(nPosiciones);
+        oEjercicio11.Ejercicio12Do(nPosiciones);
         System.out.println("\nSerie 11 con while: ");
-        oEjercicio11.Ejercicio11While(nPosiciones); 
+        oEjercicio11.Ejercicio12While(nPosiciones); 
         System.out.println();
     }
 }

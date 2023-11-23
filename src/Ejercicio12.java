@@ -11,7 +11,7 @@ public class Ejercicio12 {
       /**
        * Este fragmento de codigo utiliza un bluce for
        */
-      public void Ejercicio11For(int nPosiciones) {
+      public void Ejercicio12For(int nPosiciones) {
             int a=4;
             int contador1 = 2;
             for (int i = 1; i<=nPosiciones; i++ ) {
@@ -24,7 +24,7 @@ public class Ejercicio12 {
       /**
        * Este fragmento de codigo utiliza bucle "do while"
        */
-      public void Ejercicio11Do(int nPosiciones){
+      public void Ejercicio12Do(int nPosiciones){
             int j=1;
             int contador2 = 2;
             int b=4;
@@ -34,16 +34,16 @@ public class Ejercicio12 {
                   contador2 += b;
                   b +=2;
                   j++;
-            }while(j<nPosiciones);
+            }while(j<=nPosiciones);
       }
       /**
        * Este fragmento de codigo utiliza bucle "while"
        */
-      public void Ejercicio11While(int nPosiciones){
+      public void Ejercicio12While(int nPosiciones){
             int k=1;
             int contador3=2;
             int c=4;
-            while (k<nPosiciones) {
+            while (k<=nPosiciones) {
                   System.out.print(contador3);
                   System.out.print(" ");
                   contador3 +=c;
