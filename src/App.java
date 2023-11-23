@@ -80,11 +80,11 @@ public class App {
 
         // Ejercicio 11
         Ejercicio12 oEjercicio11 = new Ejercicio12();
-        System.out.println("\nSerie 11 con for: ");
+        System.out.println("\nSerie 12 con for: ");
         oEjercicio11.Ejercicio12For(nPosiciones);
-        System.out.println("\nSerie 11 con do: ");
+        System.out.println("\nSerie 12 con do: ");
         oEjercicio11.Ejercicio12Do(nPosiciones);
-        System.out.println("\nSerie 11 con while: ");
+        System.out.println("\nSerie 12 con while: ");
         oEjercicio11.Ejercicio12While(nPosiciones); 
         System.out.println();
     }
