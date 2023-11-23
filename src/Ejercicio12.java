@@ -7,7 +7,7 @@
  *         FECHA: 21/11/2023.
  */
 
-public class Ejercicio11 {
+public class Ejercicio12 {
       /**
        * Este fragmento de codigo utiliza un bluce for
        */

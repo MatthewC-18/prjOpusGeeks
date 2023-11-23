@@ -12,10 +12,12 @@ public class Ejercicio6 {
      */
     public void Ejercicio6For(int nPosiciones) {
         int a = 1;
-        for (int contador1 = 1; contador1 < nPosiciones + 1; contador1 += a) {
+        int contadorElementos1=0;
+        for (int contador1=1 ; contadorElementos1<nPosiciones ; contador1 += a) {
             System.out.print(contador1);
             System.out.print(" ");
             a += 2;
+            contadorElementos1++;
         }
     }
 
@@ -25,12 +27,14 @@ public class Ejercicio6 {
     public void Ejercicio6Do(int nPosiciones) {
         int contador2 = 1;
         int b = 1;
+        int contadorElementos2=0;
         do {
             System.out.print(contador2);
             System.out.print(" ");
             b += 2;
             contador2 += b;
-        } while (contador2 < nPosiciones + 1);
+            contadorElementos2++;
+        } while (contadorElementos2 < nPosiciones);
     }
 
     /**
@@ -39,11 +43,13 @@ public class Ejercicio6 {
     public void Ejercicio6While(int nPosiciones) {
         int contador3 = 1;
         int c = 1;
-        while (contador3 < nPosiciones + 1) {
+        int contadorElementos3=0;
+        while (contadorElementos3 < nPosiciones) {
             System.out.print(contador3);
             System.out.print(" ");
             c += 2;
             contador3 += c;
+            contadorElementos3++;
         }
     }
 }
