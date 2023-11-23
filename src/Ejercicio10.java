@@ -1,3 +1,9 @@
+/** 
+*Copyright (C)
+* (grupo 2 - OpusGeeks )alegria.farinango@epn.edu.ec 
+* Isabel Farinango 
+  */
+
 public class Ejercicio10 {
   
  public static void main(String[] args) {
