@@ -67,11 +67,23 @@ public class App {
         oEjercicio6.Ejercicio6While(nPosiciones);
         System.out.println();
         // Ejercicio 7
-        // ...
-
+        Ejercicio7 oEjercicio7 = new Ejercicio7();
+        System.out.println("\nSerie 7 con for: ");
+        oEjercicio7.Ejercicio7For(nPosiciones);
+        System.out.println("\nSerie 7 con do: ");
+        oEjercicio7.Ejercicio7Do(nPosiciones);
+        System.out.println("\nSerie 7 con while: ");
+        oEjercicio7.Ejercicio7While(nPosiciones);
+        System.out.println();
         // Ejercicio 8
-        // ...
-
+        Ejercicio8 oEjercicio8 = new Ejercicio8();
+        System.out.println("\nSerie 8 con for: ");
+        oEjercicio8.Ejercicio8For(nPosiciones);
+        System.out.println("\nSerie 8 con do: ");
+        oEjercicio8.Ejercicio8Do(nPosiciones);
+        System.out.println("\nSerie 8 con while: ");
+        oEjercicio8.Ejercicio8While(nPosiciones);
+        System.out.println();
         // Ejercicio 9
         // ...
 
