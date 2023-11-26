@@ -108,7 +108,6 @@ public class App {
         System.out.println("\nSerie 10 con while: ");
         oEjercicio10.Ejercicio10DoWhile(nPosiciones);
         System.out.println();
-
         // Ejercicio 12
         Ejercicio12 oEjercicio11 = new Ejercicio12();
         System.out.println("\nSerie 12 con for: ");
