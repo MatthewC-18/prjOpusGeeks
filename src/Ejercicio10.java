@@ -34,8 +34,7 @@ public void Ejercicio10While(int nPosiciones){
     System.out.print(resultado + " ");
     resultado *=3;  
     exponente++;
-  }
+   }
  }
-
 }
 
