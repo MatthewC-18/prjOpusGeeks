@@ -95,7 +95,7 @@ public class App {
         System.out.println();
 
         // Ejercicio 10
-        Ejercicio9 oEjercicio10 = new Ejercicio10(); 
+        Ejercicio10 oEjercicio10 = new Ejercicio10(); 
         System.out.println("\nSerie 10 con for:"); 
         oEjercicio9.Ejercicio10For(nPosiciones); 
         System.out.println("\nSerie 10 con do: ");
@@ -104,7 +104,7 @@ public class App {
         oEjercicio8.Ejercicio10While(nPosiciones);
         System.out.println();
 
-        // Ejercicio 11
+        // Ejercicio 12
         Ejercicio12 oEjercicio11 = new Ejercicio12();
         System.out.println("\nSerie 12 con for: ");
         oEjercicio11.Ejercicio12For(nPosiciones);
