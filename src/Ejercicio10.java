@@ -8,9 +8,10 @@ public class Ejercicio10 {
 
   public static void main(String[] args) {
     int nPosiciones=7;
-    serieS10For(nPosiciones); 
-    serieS10While(nPosiciones); 
-    serieS10DoWhile(nPosiciones); 
+    Ejercicio10For(nPosiciones); 
+    Ejercicio10DoWhile(nPosiciones); 
+    Ejercicio10While(nPosiciones); 
+    
 }
 
 /*Funcion imprime S10, ocupando el bucle for */
