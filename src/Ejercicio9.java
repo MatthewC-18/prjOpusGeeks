@@ -22,18 +22,7 @@ public class Ejercicio9 {
     }
     System.out.println();
   }
-  /*Funcion imprime S9, ocupando el bucle while */
-  public static void Ejercicio9While(int nPosiciones) {
-    System.out.println("serie S9 ocupando while: ");
-    int resultado=2; 
-    int i=1;
-    while (i<=nPosiciones) {
-      System.out.print(resultado + " ");
-      resultado+=2;
-      i++;
-    }
-    System.out.println();
-  }
+
   /*Funcion imprime S9, ocupando el bucle do-while */
   public static void Ejercicio9DoWhile(int nPosiciones) {
     System.out.println("serie S9 ocupando do-while: ");
@@ -46,6 +35,20 @@ public class Ejercicio9 {
     } while (i<=nPosiciones);
     System.out.println();
   }
+ 
+  /*Funcion imprime S9, ocupando el bucle while */
+  public static void Ejercicio9While(int nPosiciones) {
+    System.out.println("serie S9 ocupando while: ");
+    int resultado=2; 
+    int i=1;
+    while (i<=nPosiciones) {
+      System.out.print(resultado + " ");
+      resultado+=2;
+      i++;
+    }
+    System.out.println();
+  }
+ 
 }
 
 
