@@ -8,6 +8,8 @@ public class App {
         System.out.println("*  GRUPO NUMERO 2 - Opus Geeks  *");
         System.out.println("*                               *");
         System.out.println("*********************************");
+        System.out.println("   Integrantes: "+"\n- Matthew Cedeño"+"\n- Christopher Criollo"+"\n- Alegria Farinango"+"\n- Ismael Freire"+"\n- Freddy Jimenez");
+        System.out.println("*********************************");
         System.out.println("INGRESE UN NUMERO: ");
         Scanner entrada = new Scanner(System.in);
         int nPosiciones = Integer.parseInt(entrada.nextLine());
