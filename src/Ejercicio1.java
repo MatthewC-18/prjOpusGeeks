@@ -37,7 +37,6 @@ public class Ejercicio1{
             d = temp + d;
             j++;
         } while (j < nPosiciones);
-        System.out.println();
     }
     public void  Ejercicio1While (int nPosiciones){
         /*
