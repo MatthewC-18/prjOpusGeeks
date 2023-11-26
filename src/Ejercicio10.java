@@ -6,15 +6,15 @@
 
 public class Ejercicio10 {
 
-  public static void main(String[] args) {
+  /*public static void main(String[] args) {
     int nPosiciones=7;
     serieS10For(nPosiciones); 
     serieS10While(nPosiciones); 
     serieS10DoWhile(nPosiciones); 
-}
+  */
 
 /*Funcion imprime S10, ocupando el bucle for */
-public static void Ejercicio10For(int nPosiciones){
+public void Ejercicio10For(int nPosiciones){
   System.out.println("Serie S10 ocupando for: ");
 int resultado=3; 
 for(int exponente=1; exponente<=nPosiciones; exponente++){
@@ -26,7 +26,7 @@ for(int exponente=1; exponente<=nPosiciones; exponente++){
 }
  
 /*Funcion imprime S10, ocupando el bucle do-while */
-public static void Ejercicio10DoWhile(int nPosiciones){
+public void Ejercicio10DoWhile(int nPosiciones){
   System.out.println("Serie S10 ocupando do-while: ");
   int resultado=3; 
   int exponente=1;
@@ -39,7 +39,7 @@ public static void Ejercicio10DoWhile(int nPosiciones){
   } 
  
 /*Funcion imprime S10, ocupando el bucle while */
-public static void Ejercicio10While(int nPosiciones){
+public void Ejercicio10While(int nPosiciones){
   System.out.println("Serie S10 ocupando while: ");
   int resultado=3; 
   int exponente=1;
