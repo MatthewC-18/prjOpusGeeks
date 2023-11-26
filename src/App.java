@@ -15,21 +15,21 @@ public class App {
         int nPosiciones = Integer.parseInt(entrada.nextLine());
         //Ejercicio 1
         Ejercicio1 oEjercicio1 =new Ejercicio1();
-        System.out.println("\n serie 1 con for:  ");
+        System.out.println("\n Serie 1 con for:  ");
         oEjercicio1.Ejercicio1For(nPosiciones);
-        System.out.println("\n serie 1 con do:  ");
+        System.out.println("\n Serie 1 con do:  ");
         oEjercicio1.Ejercicio1Do(nPosiciones);
-        System.out.println("\n serie 1 con while:  ");
+        System.out.println("\n Serie 1 con while:  ");
         oEjercicio1.Ejercicio1While(nPosiciones);
         System.out.println();
         
         //Ejercicio 2
         Ejercicio2 oEjercicio2 = new Ejercicio2();
-        System.out.println("\n serie 2 con for:  ");
+        System.out.println("\n Serie 2 con for:  ");
         oEjercicio2.Ejercicio2For(nPosiciones);
-        System.out.println("\n serie 2 con do:  ");
+        System.out.println("\n Serie 2 con do:  ");
         oEjercicio2.Ejercicio2Do(nPosiciones);
-        System.out.println("\n serie 2 con while:  ");
+        System.out.println("\n Serie 2 con while:  ");
         oEjercicio2.Ejercicio2While(nPosiciones);
         System.out.println();
 
