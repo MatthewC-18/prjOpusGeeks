@@ -6,13 +6,6 @@
 
 public class Ejercicio10 {
 
-  /*public static void main(String[] args) {
-    int nPosiciones=7;
-    serieS10For(nPosiciones); 
-    serieS10While(nPosiciones); 
-    serieS10DoWhile(nPosiciones); 
-  */
-
 /*Funcion imprime S10, ocupando el bucle for */
 public void Ejercicio10For(int nPosiciones){
   System.out.println("Serie S10 ocupando for: ");
