@@ -3,7 +3,11 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("GRUPO NUMERO 2 - Opus Geeks");
+        System.out.println("*********************************");
+        System.out.println("*                               *");
+        System.out.println("*  GRUPO NUMERO 2 - Opus Geeks  *");
+        System.out.println("*                               *");
+        System.out.println("*********************************");
         System.out.println("INGRESE UN NUMERO: ");
         Scanner entrada = new Scanner(System.in);
         int nPosiciones = Integer.parseInt(entrada.nextLine());
