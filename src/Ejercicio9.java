@@ -4,41 +4,51 @@
 * Isabel Farinango 
   */
 
-
 public class Ejercicio9 {
 
   public static void main(String[] args) {
-    serieS9();
-    serieS10();
+    serieS9For(); 
+    serieS9While(); 
+    serieS9DoWhile(); 
   }
-//Funcion que imprime la serie S9
-public static void serieS9() {
-    System.out.println("S9: ");
-    //Inicializa la variable
-    int resultado = 2; 
-    //Bucle for 
-    for (int i = 1; i <= 8; i++) {
-      System.out.println(resultado + ",");
-      resultado *= 2; 
-  }
-  System.out.println(); 
-}
-  //Funcion que imprime la serie S10
-public static void serieS10() {
-  System.out.println("S10: ");
-  int resultado = 3; 
-  int exponente = 1; 
-    //Bucle while
-    while (exponente<=7) {
-      System.out.println(resultado + ",");
-      resultado *= 3;
-      exponente++;
-      
+  /*Funcion imprime S9, ocupando el bucle for */
+  public static void serieS9For() {
+    System.out.println("serie S9 ocupando for: ");
+    int resultado=2; 
+    for (int i=1; i<=8; i++) {
+      System.out.print(resultado + " ");
+      resultado+=2;
     }
     System.out.println();
-  } 
-
+  }
+  /*Funcion imprime S9, ocupando el bucle while */
+  public static void serieS9While() {
+    System.out.println("serie S9 ocupando while: ");
+    int resultado=2; 
+    int i=1;
+    while (i<=8) {
+      System.out.print(resultado + " ");
+      resultado+=2;
+      i++;
+    }
+    System.out.println();
+  }
+  /*Funcion imprime S9, ocupando el bucle do while */
+  public static void serieS9DoWhile() {
+    System.out.println("serie S9 ocupando do-while: ");
+    int resultado=2;
+    int i=1;
+    do {
+      System.out.print(resultado + " ");
+      resultado+=2;
+      i++;
+    } while (i<=8);
+    System.out.println();
+  }
 }
+
+
+  
 
 
 
