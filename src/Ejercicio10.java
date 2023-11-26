@@ -14,8 +14,6 @@ for(int exponente=1; exponente<=nPosiciones; exponente++){
   System.out.print(resultado + " ");
   resultado *=3;  
   }
-  //System.out.println();
-
 }
  
 /*Funcion imprime S10, ocupando el bucle do-while */
@@ -28,7 +26,6 @@ public void Ejercicio10DoWhile(int nPosiciones){
     resultado *=3;  
     exponente++;
   }while(exponente<=nPosiciones);
-  //System.out.println();
   } 
  
 /*Funcion imprime S10, ocupando el bucle while */
@@ -41,7 +38,6 @@ public void Ejercicio10While(int nPosiciones){
     resultado *=3;  
     exponente++;
   }
-  //System.out.println();
  }
 
 }
