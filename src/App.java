@@ -3,8 +3,10 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("GRUPO NUMERO 2 - Opus Geeks");
-        System.out.println("INGRESE UN NUMERO: ");
+        System.out.println("*******GRUPO NUMERO 2 - Opus Geeks*******");
+        System.out.println("Integrantes: "+"\n- Matthew Cedeño"+"\n- Christopher Criollo"+"\n- Alegria Farinango"+"\n- Brandon Freire"+"\n- Freddy Jimenez");
+        System.out.println("_________________________________________");
+        System.out.print("\nINGRESE UN NUMERO: ");
         Scanner entrada = new Scanner(System.in);
         int nPosiciones = Integer.parseInt(entrada.nextLine());
         //Ejercicio 1
