@@ -5,14 +5,11 @@
 *@author Ismael Freire
 *FECHA: 21/11/2023. 
 */
-
 /**
  * La serie presenta los numeros primos
  */
-
 public class Ejercicio5 {
     int contador = 0;
-
     /**
      * Este codigo utiliza un bucle "for" para imprimir numeros primos
      * Se inicializa el constructor para que con el parametro nPosiciones detecte e
@@ -31,12 +28,10 @@ public class Ejercicio5 {
              */
             if (esPrimo(contador1)) {
                 contadorElementos1++;
-                System.out.print(contador1);
-                System.out.print(" ");
+                System.out.print(contador1 + " ");
             }
         }
     }
-
     /**
      * 
      * @param numero
@@ -52,7 +47,6 @@ public class Ejercicio5 {
         }
         return true;
     }
-
     /**
      * Este codigo utiliza un bucle "do while"
      */
@@ -62,14 +56,12 @@ public class Ejercicio5 {
         int contador2 = 2;
         do {
             if (esPrimo(contador2)) {
-                System.out.print(contador2);
-                System.out.print(" ");
+                System.out.print(contador2 + " ");
                 contadorElementos2++;
             }
             contador2++;
         } while (contadorElementos2 < nPosiciones);
     }
-
     /**
      * Este codigo utiliza un bluce "while"
      */
@@ -78,8 +70,7 @@ public class Ejercicio5 {
         int contador3 = 2;
         while (contadorElementos3 < nPosiciones) {
             if (esPrimo(contador3)) {
-                System.out.print(contador3);
-                System.out.print(" ");
+                System.out.print(contador3 + " ");
                 contadorElementos3++;
             }
             contador3++;

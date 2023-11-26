@@ -11,7 +11,7 @@ public void Ejercicio10For(int nPosiciones){
   System.out.println("Serie S10 ocupando for: ");
 int resultado=3; 
 for(int exponente=1; exponente<=nPosiciones; exponente++){
-  System.out.print(resultado + " , ");
+  System.out.print(resultado + " ");
   resultado *=3;  
   }
   System.out.println();
@@ -24,7 +24,7 @@ public void Ejercicio10DoWhile(int nPosiciones){
   int resultado=3; 
   int exponente=1;
   do {
-    System.out.print(resultado + " , ");
+    System.out.print(resultado + " ");
     resultado *=3;  
     exponente++;
   }while(exponente<=nPosiciones);
@@ -37,7 +37,7 @@ public void Ejercicio10While(int nPosiciones){
   int resultado=3; 
   int exponente=1;
   while(exponente<=nPosiciones){
-    System.out.print(resultado + " , ");
+    System.out.print(resultado + " ");
     resultado *=3;  
     exponente++;
   }

@@ -14,13 +14,11 @@ public class Ejercicio6 {
         int a = 1;
         int contadorElementos1=0;
         for (int contador1=1 ; contadorElementos1<nPosiciones ; contador1 += a) {
-            System.out.print(contador1);
-            System.out.print(" ");
+            System.out.print(contador1 + " ");
             a += 2;
             contadorElementos1++;
         }
     }
-
     /**
      * Este codigo utiliza un bucle "do while"
      */
@@ -29,8 +27,7 @@ public class Ejercicio6 {
         int b = 1;
         int contadorElementos2=0;
         do {
-            System.out.print(contador2);
-            System.out.print(" ");
+            System.out.print(contador2 + " ");
             b += 2;
             contador2 += b;
             contadorElementos2++;
@@ -45,8 +42,7 @@ public class Ejercicio6 {
         int c = 1;
         int contadorElementos3=0;
         while (contadorElementos3 < nPosiciones) {
-            System.out.print(contador3);
-            System.out.print(" ");
+            System.out.print(contador3 + " ");
             c += 2;
             contador3 += c;
             contadorElementos3++;
