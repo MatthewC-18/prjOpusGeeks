@@ -135,7 +135,9 @@ public class App {
             System.out.println("\nSerie 5 de Caracter:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
-
+            Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
+            System.out.println("\nSerie 6 de Caracter:");
+            oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
             // EJERCICIO 7
 
             // EJERCICIO 8
