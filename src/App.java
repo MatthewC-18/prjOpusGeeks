@@ -5,12 +5,13 @@ import javax.sound.sampled.SourceDataLine;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        ParteIsmael objParteIF = new ParteIsmael();
         System.out.println("*********************************");
         System.out.println("*                               *");
         System.out.println("*  GRUPO NUMERO 2 - Opus Geeks  *");
         System.out.println("*                               *");
         System.out.println("*********************************");
-        System.out.println("   Integrantes: "+"\n - Matthew Cedeño"+"\n - Christopher Criollo"+"\n - Alegria Farinango"+"\n - Ismael Freire"+"\n - Freddy Jimenez");
+        System.out.println("   Integrantes: "+"\n - Matthew Cedeño"+"\n - Ismael Freire"+"\n - Freddy Jimenez");
         System.out.println("\n*********************************");
         System.out.println("INGRESE UN NUMERO: ");
         try (Scanner entrada = new Scanner(System.in)) {
@@ -125,9 +126,11 @@ public class App {
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
 
             // EJERCICIO 1
-
+            System.out.println("\nSerie 1 de Caracteres:");
+            objParteIF.serie1Char(nPosiciones);
             // EJERCICIO 2
-
+            System.out.println("\nSerie 2 de Caracteres:");
+            objParteIF.serei2Char(nPosiciones);
             // EJERCICIO 3
             Ejercicio3SC oEjercicio3SC = new Ejercicio3SC();
             System.out.println("\nSerie 3 de Caracter:");
@@ -142,12 +145,13 @@ public class App {
 
             // EJERCICIO 5
             Ejercicio5SC oEjercicio5SC = new Ejercicio5SC();
-            System.out.println("\nSerie 5 de Caracter:");
+            System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
 
             // EJERCICIO 7
-
+            System.out.println("\nSerie 7 de Caracteres:");
+            objParteIF.serie7Char(nPosiciones);        
             // EJERCICIO 8
             Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
             System.out.println("\nSerie 8 de Caracter:");
