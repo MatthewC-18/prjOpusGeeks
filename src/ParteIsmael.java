@@ -248,7 +248,69 @@ public class ParteIsmael {
             System.out.println();
         }
     }
+    /************************CADENA DE CARACTERES***************************/
+    /**C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
+            Ejemplo, frase: ballena azul  
+                    letra : l
+                    salida: ba  ena azu 
+     * 
+     */
+    public void cadena4(){
+        String cadena = new String();
+        String letra = new String();
+        System.out.println("Ingrese una frase");
+        Scanner sc = new Scanner(System.in);
+        cadena = sc.nextLine().toLowerCase();
+        System.out.println("Ingrese la letra a eliminar:");
+        letra = sc.nextLine().toLowerCase();
+        String cadenaRem = cadena.replaceAll(letra, " ");
+        System.out.println(cadenaRem);
+    }
 
+    
+    /**C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
+            Ejemplo, frase: ballena
+                    salida: AnEllAb 
+    * 
+    */
+    public void cadena5 (){
+        String cadena = new String();
+        System.out.println("Ingrese una frase");
+        Scanner sc = new Scanner(System.in);
+        cadena = sc.nextLine().toLowerCase();
+        char[] cadenachars = cadena.toCharArray();
+        for (int i=0 ; i<cadenachars.length ; i++){
+            if ((cadenachars[i] == 'a') || (cadenachars[i]=='e')|| (cadenachars[i]=='i') || (cadenachars[i]=='o') || (cadenachars[i]=='u')){
+                cadenachars[i]= Character.toUpperCase(cadenachars[i]);
+            }
+        }
+        String nuevaCadenaString = String.valueOf(cadenachars);
+        StringBuilder reversaCadena = new StringBuilder(nuevaCadenaString);
+        reversaCadena.reverse();;
+        System.out.println(reversaCadena);
+    }
+
+    /**	C06)    Pedir una frase y presentarla inverida con las letras en mayusculas. 
+            Ejemplo, frase: ballena
+                    salida: aNeLLaB 
+    * 
+    */
+    public void cadena6(){
+        String cadena = new String();
+        System.out.println("Ingrese una frase:");
+        Scanner sc = new Scanner(System.in);
+        cadena = sc.nextLine().toLowerCase();
+        char[] cadenachars = cadena.toCharArray();
+        for (int i=0 ; i<cadenachars.length ; i++){
+            if ((cadenachars[i] != 'a') && (cadenachars[i] !='e') && (cadenachars[i] !='i') && (cadenachars[i] !='o') && (cadenachars[i] !='u')){
+                cadenachars[i]= Character.toUpperCase(cadenachars[i]);
+            }
+        }
+        String nuevaCadenaString = String.valueOf(cadenachars);
+        StringBuilder reversaCadena = new StringBuilder(nuevaCadenaString);
+        reversaCadena.reverse();
+        System.out.println(reversaCadena);
+    }
 
     /************************LOADINGS***************************/
     /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
@@ -344,70 +406,7 @@ public class ParteIsmael {
     
     //----------------
 
-    public static void cadena4(){
-            /**C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
-            Ejemplo, frase: ballena azul  
-                    letra : l
-                    salida: ba  ena azu 
-     * 
-     */
-        String cadena = new String();
-        String letra = new String();
-        System.out.println("Ingrese una frase");
-        Scanner sc = new Scanner(System.in);
-        cadena = sc.nextLine().toLowerCase();
-        System.out.println("Ingrese la letra a eliminar:");
-        letra = sc.nextLine().toLowerCase();
-        String cadenaRem = cadena.replaceAll(letra, " ");
-        System.out.println(cadenaRem);
-    }
-
     
-    
-    public static void cadena5 (){
-        /**C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
-            Ejemplo, frase: ballena
-                    salida: AnEllAb 
-        * 
-        */
-        String cadena = new String();
-        System.out.println("Ingrese una frase");
-        Scanner sc = new Scanner(System.in);
-        cadena = sc.nextLine().toLowerCase();
-        char[] cadenachars = cadena.toCharArray();
-        for (int i=0 ; i<cadenachars.length ; i++){
-            if ((cadenachars[i] == 'a') || (cadenachars[i]=='e')|| (cadenachars[i]=='i') || (cadenachars[i]=='o') || (cadenachars[i]=='u')){
-                cadenachars[i]= Character.toUpperCase(cadenachars[i]);
-            }
-        }
-        String nuevaCadenaString = String.valueOf(cadenachars);
-        StringBuilder reversaCadena = new StringBuilder(nuevaCadenaString);
-        reversaCadena.reverse();;
-        System.out.println(reversaCadena);
-    }
-
-
-    public static void cadena6(){
-            /**	C06)    Pedir una frase y presentarla inverida con las letras en mayusculas. 
-            Ejemplo, frase: ballena
-                    salida: aNeLLaB 
-     * 
-     */
-        String cadena = new String();
-        System.out.println("Ingrese una frase:");
-        Scanner sc = new Scanner(System.in);
-        cadena = sc.nextLine().toLowerCase();
-        char[] cadenachars = cadena.toCharArray();
-        for (int i=0 ; i<cadenachars.length ; i++){
-            if ((cadenachars[i] != 'a') && (cadenachars[i] !='e') && (cadenachars[i] !='i') && (cadenachars[i] !='o') && (cadenachars[i] !='u')){
-                cadenachars[i]= Character.toUpperCase(cadenachars[i]);
-            }
-        }
-        String nuevaCadenaString = String.valueOf(cadenachars);
-        StringBuilder reversaCadena = new StringBuilder(nuevaCadenaString);
-        reversaCadena.reverse();
-        System.out.println(reversaCadena);
-    }
 
 
 
