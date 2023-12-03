@@ -58,6 +58,94 @@ public class ParteIsmael {
         System.out.println();
     }
 
+    /************************LOADINGS***************************/
+    /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
+    / 100%
+    * 
+    */
+    public void loading1 (){
+        String barraCargandoString[]={"|", "/", "-", "\\"};
+        for(int i = 0; i <= 100; i++){
+            String c = barraCargandoString[i%4];
+            System.out.print("\r Loading "+ c +" "+ i +" %");
+            try {Thread.sleep(100);} 
+            catch (InterruptedException ie) {}
+        }
+        System.out.println();
+    }
+
+
+     /**
+      *     L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
+        [###         ] 20%
+      * @autor Ismael Freire
+      * @version 2.0
+      */
+    public void loading2(){
+        char[] barra;
+        barra = new char[20];
+        System.out.println("Ingrese un caracter:");
+        Scanner sc = new Scanner(System.in);
+        char caracter = sc.next().charAt(0);
+
+        for (int longitud=1 ; longitud <= barra.length ; longitud++){
+            int porcentaje=(longitud*5);
+            System.out.print("[");
+            for(int i=0 ; i<barra.length ; i++){
+                if (i < longitud) {
+                    System.out.print(caracter);
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("] " + porcentaje + "%\r");
+            try {Thread.sleep(200);} catch (InterruptedException ie){}
+        }
+    }
+
+    /**
+    *   L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
+        [====/           ] 20%
+        * @autor Ismael Freire
+        version 2.0
+        
+    */
+    public void loading7(){
+        char[] barra;
+        barra = new char[20];
+        //System.out.println("Ingrese un caracter:");
+        //Scanner sc = new Scanner(System.in);
+        //char caracter = sc.next().charAt(0);
+        char caracter = '=';
+
+        for (int longitud=1 ; longitud <= barra.length ; longitud++){
+            int porcentaje=(longitud*5);
+            System.out.print("[");
+            for(int i=0 ; i<barra.length ; i++){
+                if (i < longitud) {
+                    barra[i]=caracter;
+                    System.out.print(barra[i]);
+                    barra[i+1]=puntaRotacional();
+                    System.out.print(barra[i+1]);
+                }else{                   
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("] " + porcentaje + "%\r");
+            try {Thread.sleep(200);} catch (InterruptedException ie){}
+        }
+    }    
+    private static char puntaRotacional() {
+        String barraCargandoString[]={"|", "/", "-", "\\"};
+        for(int i = 0; i <= 100; i++){
+            String c = barraCargandoString[i%4];
+            System.out.print("\r"+ c);
+            try {Thread.sleep(100);} 
+            catch (InterruptedException ie) {}
+        }
+        System.out.println();
+        return puntaRotacional();
+    }
 
     /************************FIGURAS***************************/
 
@@ -324,88 +412,7 @@ public class ParteIsmael {
 
 
 
-    public static void loading1 (){
-        //---------------------LOADING
-        /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
-        / 100%
-        * 
-        */
-        String barraCargandoString[]={"|", "/", "-", "\\"};
-        for(int i = 0; i <= 100; i++){
-            String c = barraCargandoString[i%4];
-            System.out.print("\r Loading "+ c +" "+ i +" %");
-            try {Thread.sleep(100);} 
-            catch (InterruptedException ie) {}
-        }
-        System.out.println();
-    }
-
-
-     /**
-      *     L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
-        [###         ] 20%
-      */
-    public static void loading2(){
-        char[] barra;
-        barra = new char[20];
-        System.out.println("Ingrese un caracter:");
-        Scanner sc = new Scanner(System.in);
-        char caracter = sc.next().charAt(0);
-
-        for (int longitud=1 ; longitud <= barra.length ; longitud++){
-            int porcentaje=(longitud*5);
-            System.out.print("[");
-            for(int i=0 ; i<barra.length ; i++){
-                if (i < longitud) {
-                    System.out.print(caracter);
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.print("] " + porcentaje + "%\r");
-            try {Thread.sleep(200);} catch (InterruptedException ie){}
-        }
-    }
-    /**
-    *     L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
-         [====/           ] 20%
-    */
-    public static void loading7(){
-        char[] barra;
-        barra = new char[20];
-        //System.out.println("Ingrese un caracter:");
-        //Scanner sc = new Scanner(System.in);
-        //char caracter = sc.next().charAt(0);
-        char caracter = '=';
-
-        for (int longitud=1 ; longitud <= barra.length ; longitud++){
-            int porcentaje=(longitud*5);
-            System.out.print("[");
-            for(int i=0 ; i<barra.length ; i++){
-                if (i < longitud) {
-                    barra[i]=caracter;
-                    System.out.print(barra[i]);
-                    barra[i+1]=puntaRotacional();
-                    System.out.print(barra[i+1]);
-                }else{                   
-                    System.out.print(" ");
-                }
-            }
-            System.out.print("] " + porcentaje + "%\r");
-            try {Thread.sleep(200);} catch (InterruptedException ie){}
-        }
-    }    
-    private static char puntaRotacional() {
-        String barraCargandoString[]={"|", "/", "-", "\\"};
-        for(int i = 0; i <= 100; i++){
-            String c = barraCargandoString[i%4];
-            System.out.print("\r"+ c);
-            try {Thread.sleep(100);} 
-            catch (InterruptedException ie) {}
-        }
-        System.out.println();
-        return puntaRotacional();
-    }
+    
 
     /**
      * R02) crear un metodo recursivo para obtener la suma(a,b)
