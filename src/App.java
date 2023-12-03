@@ -151,7 +151,9 @@ public class App {
             System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
-
+            Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
+            System.out.println("\nSerie 6 de Caracter:");
+            oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
             objParteIF.serie7Char(nPosiciones);        
