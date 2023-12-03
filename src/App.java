@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        ParteIsmael objParteIF = new ParteIsmael();
         System.out.println("*********************************");
         System.out.println("*                               *");
         System.out.println("*  GRUPO NUMERO 2 - Opus Geeks  *");
@@ -123,21 +124,24 @@ public class App {
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
 
             // EJERCICIO 1
-
+            System.out.println("\nSerie 1 de Caracteres:");
+            objParteIF.serie1Char(nPosiciones);
             // EJERCICIO 2
-
+            System.out.println("\nSerie 2 de Caracteres:");
+            objParteIF.serei2Char(nPosiciones);
             // EJERCICIO 3
 
             // EJERCICIO 4
 
             // EJERCICIO 5
             Ejercicio5SC oEjercicio5SC = new Ejercicio5SC();
-            System.out.println("\nSerie 5 de Caracter:");
+            System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
 
             // EJERCICIO 7
-
+            System.out.println("\nSerie 7 de Caracteres:");
+            objParteIF.serie7Char(nPosiciones);        
             // EJERCICIO 8
 
             // EJERCICIO 9
