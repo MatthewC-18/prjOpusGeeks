@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio8SC",
+            "request": "launch",
+            "mainClass": "Ejercicio8SC",
+            "projectName": "prjPoliretoGrupo2_52cbf07a"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio3SC",
+            "request": "launch",
+            "mainClass": "Ejercicio3SC",
+            "projectName": "prjPoliretoGrupo2_52cbf07a"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

@@ -1,14 +1,17 @@
 
 import java.util.Scanner;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class App {
     public static void main(String[] args) throws Exception {
+        ParteIsmael objParteIF = new ParteIsmael();
         System.out.println("*********************************");
         System.out.println("*                               *");
         System.out.println("*  GRUPO NUMERO 2 - Opus Geeks  *");
         System.out.println("*                               *");
         System.out.println("*********************************");
-        System.out.println("   Integrantes: "+"\n - Matthew Cedeño"+"\n - Christopher Criollo"+"\n - Alegria Farinango"+"\n - Ismael Freire"+"\n - Freddy Jimenez");
+        System.out.println("   Integrantes: "+"\n - Matthew Cedeño"+"\n - Ismael Freire"+"\n - Freddy Jimenez");
         System.out.println("\n*********************************");
         System.out.println("INGRESE UN NUMERO: ");
         try (Scanner entrada = new Scanner(System.in)) {
@@ -119,31 +122,56 @@ public class App {
             oEjercicio11.Ejercicio12Do(nPosiciones);
             System.out.println("\nSerie 12 con while: ");
             oEjercicio11.Ejercicio12While(nPosiciones);
+            System.out.println();
 
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
 
+            System.out.println("EJERCICIOS POLIRETOS");
             // EJERCICIO 1
-
+            System.out.println("\nSerie 1 de Caracteres:");
+            objParteIF.serie1Char(nPosiciones);
             // EJERCICIO 2
-
+            System.out.println("\nSerie 2 de Caracteres:");
+            objParteIF.serei2Char(nPosiciones);
             // EJERCICIO 3
+            Ejercicio3SC oEjercicio3SC = new Ejercicio3SC();
+            System.out.println("\nSerie 3 de Caracter:");
+            oEjercicio3SC.ejercicio3SCFOR(nPosiciones);
+            
 
             // EJERCICIO 4
+            Ejercicio4SC oEjercicio4SC = new Ejercicio4SC();
+            System.out.println("\nSerie 4 de Caracter:");
+            oEjercicio4SC.ejercicio4SCFOR(nPosiciones);
+
 
             // EJERCICIO 5
             Ejercicio5SC oEjercicio5SC = new Ejercicio5SC();
-            System.out.println("\nSerie 5 de Caracter:");
+            System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
             Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
             System.out.println("\nSerie 6 de Caracter:");
             oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
             // EJERCICIO 7
-
+            System.out.println("\nSerie 7 de Caracteres:");
+            objParteIF.serie7Char(nPosiciones);        
             // EJERCICIO 8
-
+            Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
+            System.out.println("\nSerie 8 de Caracter:");
+            oEjercicio8SC.ejercicio8SCFOR(nPosiciones);
             // EJERCICIO 9
 
+            //---------------------------------------- ARRAYS ----------------------------------------------------------
+            //---------------------------------------- LOAGINGS ----------------------------------------------------------
+            //EJERCICIO 1
+            System.out.println("\nLoading 1:");
+            objParteIF.loading1();
+            //EJERCICIO 2
+            System.out.println("\nLoading 2");
+            objParteIF.loading2();
+            //EJERCICIO 7
+        
         }
         System.out.println();
     }
