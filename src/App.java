@@ -8,7 +8,7 @@ public class App {
         System.out.println("*  GRUPO NUMERO 2 - Opus Geeks  *");
         System.out.println("*                               *");
         System.out.println("*********************************");
-        System.out.println("   Integrantes: "+"\n - Matthew Cedeño"+"\n - Christopher Criollo"+"\n - Alegria Farinango"+"\n - Ismael Freire"+"\n - Freddy Jimenez");
+        System.out.println("   Integrantes: "+"\n - Matthew Cedeño"+"\n - Ismael Freire"+"\n - Freddy Jimenez");
         System.out.println("\n*********************************");
         System.out.println("INGRESE UN NUMERO: ");
         try (Scanner entrada = new Scanner(System.in)) {
