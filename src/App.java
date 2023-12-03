@@ -1,6 +1,8 @@
 
 import java.util.Scanner;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("*********************************");
@@ -127,8 +129,16 @@ public class App {
             // EJERCICIO 2
 
             // EJERCICIO 3
+            Ejercicio3SC oEjercicio3SC = new Ejercicio3SC();
+            System.out.println("\nSerie 3 de Caracter:");
+            oEjercicio3SC.ejercicio3SCFOR(nPosiciones);
+            
 
             // EJERCICIO 4
+            Ejercicio4SC oEjercicio4SC = new Ejercicio4SC();
+            System.out.println("\nSerie 4 de Caracter:");
+            oEjercicio4SC.ejercicio4SCFOR(nPosiciones);
+
 
             // EJERCICIO 5
             Ejercicio5SC oEjercicio5SC = new Ejercicio5SC();
@@ -139,7 +149,9 @@ public class App {
             // EJERCICIO 7
 
             // EJERCICIO 8
-
+            Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
+            System.out.println("\nSerie 8 de Caracter:");
+            oEjercicio8SC.ejercicio8SCFOR(nPosiciones);
             // EJERCICIO 9
 
         }
