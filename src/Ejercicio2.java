@@ -28,7 +28,6 @@ public class Ejercicio2 {
          * Inicializar los datos
          */ 
         int i = 1;
-        int j = 0;
         do {
             System.out.print((2 * i - 1) + " 0 ");
             i++;
@@ -43,7 +42,6 @@ public class Ejercicio2 {
          * Inicializar los datos
          */ 
         int i = 1;
-        int j = 0;
         while (i <= n) {
             System.out.print((2 * i - 1) + " 0 ");
             i++;
