@@ -147,9 +147,24 @@ public class App {
             // EJERCICIO 8
 
             // EJERCICIO 9
-
+            
+            //---------------------------------------- FIGURAS --------------------------------------------------------
+            //EJERCICIO 9
+            System.out.println("\nFigura 9");
+            objParteIF.figura9(nPosiciones);
+            //FIGURA 10
+            System.out.println("\nFigura 10");
+            objParteIF.figura10(nPosiciones);
+            //FIGURA 11 (PROBLEMA)
+            //FIGURA 12
+            System.out.println("\nFigura 12");
+            objParteIF.figura12(nPosiciones);
+            //FIGURA 17 (PROBLEMA)
+            //FIGURA 18
+            System.out.println("\nFigura 18");
+            objParteIF.figura18(nPosiciones);
             //---------------------------------------- ARRAYS ----------------------------------------------------------
-            //---------------------------------------- LOAGINGS ----------------------------------------------------------
+            //---------------------------------------- LOAGINGS --------------------------------------------------------
             //EJERCICIO 1
             System.out.println("\nLoading 1:");
             objParteIF.loading1();
@@ -158,6 +173,7 @@ public class App {
             objParteIF.loading2();
             //EJERCICIO 7
         
+            //---------------------------------------- LOAGINGS --------------------------------------------------------
         }
         System.out.println();
     }

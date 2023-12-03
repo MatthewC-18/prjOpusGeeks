@@ -1,3 +1,8 @@
+/**
+ * @autor Ismael Freire
+ * @version 2.0
+ * @date 03/12/2023
+ */
 import java.util.Scanner;
 
 public class ParteIsmael {
@@ -57,6 +62,193 @@ public class ParteIsmael {
         }
         System.out.println();
     }
+
+    /************************FIGURAS***************************/
+    /** 
+     * F9:
+                            ___   
+                        ___|   |___
+                    ___|	   	   |___
+                ___|		   		   |___
+            ___|			   			   |___
+     * @author Ismael Freire
+     * @version 2.0
+     */
+    public void figura9 (int numFilas){
+        //Recorrer filas
+        for(int filas=0 ; filas<=numFilas ; filas++){
+            //imprimir espacios en blanco
+            for(int espacioBlanco=1 ; espacioBlanco<=numFilas-filas ; espacioBlanco++){
+                System.out.print("    ");
+            }
+            // Imprimir el lado izquierdo
+            if (filas>=1) {
+                System.out.print("___|");
+            }
+            // Bucle para imprimir espacios en blanco entre los lados
+            for (int k = 0; k < 2*filas-1; k++) {
+                System.out.print("    ");
+            }
+            
+            if (filas == 0) {
+                System.out.println("____");
+            }else{
+                // Imprimir el lado derecho
+                System.out.println("|___");
+            }
+        }
+    }
+    /**F10:
+            _+_
+                |_-_
+                    |_+_
+                        |_-_
+                            |_+_
+                                |
+     *
+     */
+    public void figura10(int numFilas){
+        String s = "|_-_";
+        String s1 = " _+_";
+        for(int filas=0 ; filas<=numFilas ; filas++){
+            for(int espacioBlanco=0 ; espacioBlanco<2*filas ; espacioBlanco++){
+                System.out.print("  ");
+            }
+            
+            if (filas==0) {
+                System.out.println(s1);
+            }else if(filas >= 1 && filas<numFilas){
+                System.out.println(s);
+                if(s=="|_-_"){
+                    s="|_+_";
+                 }else{
+                    s="|_-_";
+                }           
+            }if(filas==numFilas){
+                    System.out.println("|");
+                }            
+        }
+    }
+     
+    /**F11:
+            | _ 
+               | _ _
+                    | _ _ _
+                           | _ _ _ _
+                                    | _ _ _ _ _
+    * 
+    */
+    
+    public void figura11(int numFilas){
+        //String s = "|";
+        int espacios = numFilas;
+        for(int filas=0 ; filas<numFilas ; filas++){
+            for(int espacioBlanco=0 ; espacioBlanco< espacios /*4*filas2*filas*/ ; espacioBlanco++){
+                System.out.print(" ");
+            }
+            
+            System.out.print("|");
+            int variable=1;
+
+            for(int i=0 ; i<=filas ; i++ ){
+                String serieChar = "_".repeat(variable);
+                System.out.print(serieChar + " ");          
+            }
+            System.out.println();
+            espacios--;
+            variable++;
+
+            /*
+            System.out.println("_");
+            */
+            //
+            /*for (int k = 0 ; k < filas ; k++) {
+                //System.out.print(" ");
+                System.out.print("_");
+            }
+            System.out.println();*/
+        
+            /*if (filas%2==1){
+                System.out.println(s);
+            }else if(filas%2==0){
+                for(int printguion=1; printguion<=numFilas ; printguion++){
+                    String serieChar = "-".repeat(printguion);
+                    System.out.print(serieChar);
+                }
+                System.out.print(" ");
+                //variable++;
+            }*/
+        }
+
+    }
+
+
+    /**F12:
+        ...
+        123456789
+        12345678
+        1234567
+        123456
+        12345
+        1234
+        123
+        12
+        1
+     * 
+     */
+    public void  figura12(int posiciones){
+
+        int contador=posiciones;
+        for(int i=0 ; i<=posiciones ; i++){
+            for(int j=1 ; j<=contador ; j++){
+                System.out.print(j);
+            }
+            System.out.println();
+            contador--;
+        }
+    }
+    
+    /**F17:
+            1				1
+                0		0
+                    1
+                0		0
+            1				1
+            ....
+     * 
+     */
+
+    
+    
+        /**F18:
+            2
+            1   2
+            1   3   2
+            1   4   5   2
+            1   5   9   7  2
+            1   6   14  16  9  2
+     * 
+     */
+    public void figura18(int filas){
+        int[][] matriz = new int[filas][filas];
+        // Llenar la matriz
+        for (int i = 0; i < filas; i++) {
+            matriz[i][0] = 1;
+            matriz[i][i] = 2;
+
+            for (int j = 1; j < i; j++) {
+                matriz[i][j] = matriz[i - 1][j - 1] + matriz[i - 1][j];
+            }
+        }
+        // Imprimir la matriz 
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(matriz[i][j] + "   ");
+            }
+            System.out.println();
+        }
+    }
+
 
     /************************LOADINGS***************************/
     /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
@@ -147,202 +339,9 @@ public class ParteIsmael {
         return puntaRotacional();
     }
 
-    /************************FIGURAS***************************/
 
-    /** 
-     * F9:
-                            ___   
-                        ___|   |___
-                    ___|	   	   |___
-                ___|		   		   |___
-            ___|			   			   |___
-     * @author Ismael Freire
-     */
-    public static void figura9 (int numFilas){
-        //Recorrer filas
-        for(int filas=0 ; filas<=numFilas ; filas++){
-            //imprimir espacios en blanco
-            for(int espacioBlanco=1 ; espacioBlanco<=numFilas-filas ; espacioBlanco++){
-                System.out.print("    ");
-            }
-            // Imprimir el lado izquierdo
-            if (filas>=1) {
-                System.out.print("___|");
-            }
-            // Bucle para imprimir espacios en blanco entre los lados
-            for (int k = 0; k < 2*filas-1; k++) {
-                System.out.print("    ");
-            }
-            
-            if (filas == 0) {
-                System.out.println("____");
-            }else{
-                // Imprimir el lado derecho
-                System.out.println("|___");
-            }
-        }
-    }
-    /**F10:
-            _+_
-                |_-_
-                    |_+_
-                        |_-_
-                            |_+_
-                                |
-     * 
-     */
-    public static void figura10(int numFilas){
-        String s = "|_-_";
-        String s1 = " _+_";
-        for(int filas=0 ; filas<=numFilas ; filas++){
-            for(int espacioBlanco=0 ; espacioBlanco<2*filas ; espacioBlanco++){
-                System.out.print("  ");
-            }
-            
-            if (filas==0) {
-                System.out.println(s1);
-            }else if(filas >= 1 && filas<numFilas){
-                System.out.println(s);
-                if(s=="|_-_"){
-                    s="|_+_";
-                 }else{
-                    s="|_-_";
-                }           
-            }if(filas==numFilas){
-                    System.out.println("|");
-                }            
-
-            /*if (filas>=1) {
-                System.out.println(s);
-                if(s=="|_+_"){
-                    s="|_-_";
-                 }else{
-                    s="|_+_";
-                }
-            }else{
-                System.out.println("_+_");
-            }*/
-        }
-    }
-     
-    /**F11:
-            | _ 
-               | _ _
-                    | _ _ _
-                           | _ _ _ _
-                                    | _ _ _ _ _
-    * 
-    */
-    
-    public static void figura11(int numFilas){
-        //String s = "|";
-        int espacios = numFilas;
-        for(int filas=0 ; filas<numFilas ; filas++){
-            for(int espacioBlanco=0 ; espacioBlanco< espacios /*4*filas2*filas*/ ; espacioBlanco++){
-                System.out.print(" ");
-            }
-            
-            System.out.print("|");
-            int variable=1;
-
-            for(int i=0 ; i<=filas ; i++ ){
-                String serieChar = "_".repeat(variable);
-                System.out.print(serieChar + " ");          
-            }
-            System.out.println();
-            espacios--;
-            variable++;
-
-            /*
-            System.out.println("_");
-            */
-            //
-            /*for (int k = 0 ; k < filas ; k++) {
-                //System.out.print(" ");
-                System.out.print("_");
-            }
-            System.out.println();*/
-        
-            /*if (filas%2==1){
-                System.out.println(s);
-            }else if(filas%2==0){
-                for(int printguion=1; printguion<=numFilas ; printguion++){
-                    String serieChar = "-".repeat(printguion);
-                    System.out.print(serieChar);
-                }
-                System.out.print(" ");
-                //variable++;
-            }*/
-        }
-
-    }
-
-
-    /**F12:
-        ...
-        123456789
-        12345678
-        1234567
-        123456
-        12345
-        1234
-        123
-        12
-        1
-     * 
-     */
-    public static void  figura12(int posiciones){
-
-        int contador=posiciones;
-        for(int i=0 ; i<=posiciones ; i++){
-            for(int j=1 ; j<=contador ; j++){
-                System.out.print(j);
-            }
-            System.out.println();
-            contador--;
-        }
-    }
-    
-    /**F17:
-            1				1
-                0		0
-                    1
-                0		0
-            1				1
-            ....
-     * 
-     */
 
     
-    
-        /**F18:
-            2
-            1   2
-            1   3   2
-            1   4   5   2
-            1   5   9   7  2
-            1   6   14  16  9  2
-     * 
-     */
-    public static void figura18(int filas){
-        int[][] matriz = new int[filas][filas];
-        // Llenar la matriz
-        for (int i = 0; i < filas; i++) {
-            matriz[i][0] = 1;
-            matriz[i][i] = 2;
-
-            for (int j = 1; j < i; j++) {
-                matriz[i][j] = matriz[i - 1][j - 1] + matriz[i - 1][j];
-            }
-        }
-        // Imprimir la matriz 
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print(matriz[i][j] + "   ");
-            }
-            System.out.println();
-        }
-    }
     //----------------
 
     public static void cadena4(){
