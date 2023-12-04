@@ -158,6 +158,16 @@ public class App {
             oEjercicio8SC.ejercicio8SCFOR(nPosiciones);
             // EJERCICIO 9
 
+            //---------------------------------------- ARRAYS ----------------------------------------------------------
+            //---------------------------------------- LOAGINGS ----------------------------------------------------------
+            //EJERCICIO 1
+            System.out.println("\nLoading 1:");
+            objParteIF.loading1();
+            //EJERCICIO 2
+            System.out.println("\nLoading 2");
+            objParteIF.loading2();
+            //EJERCICIO 7
+        
         }
         System.out.println();
     }
