@@ -1,11 +1,17 @@
+/**
+*Copyright (C) 2K23, grupo2
+*(grupo2 - Opus Geeks), matthewcedeno92@gmail.com
+*@Version 1.0.
+*@author: Matthew Cedeno.
+*FECHA: 01/12/2023.
+
+*/
 
 
 public class Ejercicio4SC {
-    public static void main(String[] args) {
-        
-    }
+    
 
-    public static String ejercicio4SCFOR(int nPosiciones) {
+    public  String ejercicio4SCFOR(int nPosiciones) {
         StringBuilder serie = new StringBuilder();
         String[] operadores = {"+", "-", "*", "/"};
         int indiceOperador = 0;
