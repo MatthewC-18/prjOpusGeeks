@@ -1,3 +1,8 @@
+/**
+ * @autor Ismael Freire
+ * @version 2.0
+ * @date 03/12/2023
+ */
 import java.util.Scanner;
 
 public class ParteIsmael {
@@ -58,97 +63,7 @@ public class ParteIsmael {
         System.out.println();
     }
 
-    /************************LOADINGS***************************/
-    /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
-    / 100%
-    * 
-    */
-    public void loading1 (){
-        String barraCargandoString[]={"|", "/", "-", "\\"};
-        for(int i = 0; i <= 100; i++){
-            String c = barraCargandoString[i%4];
-            System.out.print("\r Loading "+ c +" "+ i +" %");
-            try {Thread.sleep(100);} 
-            catch (InterruptedException ie) {}
-        }
-        System.out.println();
-    }
-
-
-     /**
-      *     L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
-        [###         ] 20%
-      * @autor Ismael Freire
-      * @version 2.0
-      */
-    public void loading2(){
-        char[] barra;
-        barra = new char[20];
-        System.out.println("Ingrese un caracter:");
-        Scanner sc = new Scanner(System.in);
-        char caracter = sc.next().charAt(0);
-
-        for (int longitud=1 ; longitud <= barra.length ; longitud++){
-            int porcentaje=(longitud*5);
-            System.out.print("[");
-            for(int i=0 ; i<barra.length ; i++){
-                if (i < longitud) {
-                    System.out.print(caracter);
-                }else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.print("] " + porcentaje + "%\r");
-            try {Thread.sleep(200);} catch (InterruptedException ie){}
-        }
-    }
-
-    /**
-    *   L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
-        [====/           ] 20%
-        * @autor Ismael Freire
-        version 2.0
-        
-    */
-    public void loading7(){
-        char[] barra;
-        barra = new char[20];
-        //System.out.println("Ingrese un caracter:");
-        //Scanner sc = new Scanner(System.in);
-        //char caracter = sc.next().charAt(0);
-        char caracter = '=';
-
-        for (int longitud=1 ; longitud <= barra.length ; longitud++){
-            int porcentaje=(longitud*5);
-            System.out.print("[");
-            for(int i=0 ; i<barra.length ; i++){
-                if (i < longitud) {
-                    barra[i]=caracter;
-                    System.out.print(barra[i]);
-                    barra[i+1]=puntaRotacional();
-                    System.out.print(barra[i+1]);
-                }else{                   
-                    System.out.print(" ");
-                }
-            }
-            System.out.print("] " + porcentaje + "%\r");
-            try {Thread.sleep(200);} catch (InterruptedException ie){}
-        }
-    }    
-    private static char puntaRotacional() {
-        String barraCargandoString[]={"|", "/", "-", "\\"};
-        for(int i = 0; i <= 100; i++){
-            String c = barraCargandoString[i%4];
-            System.out.print("\r"+ c);
-            try {Thread.sleep(100);} 
-            catch (InterruptedException ie) {}
-        }
-        System.out.println();
-        return puntaRotacional();
-    }
-
     /************************FIGURAS***************************/
-
     /** 
      * F9:
                             ___   
@@ -157,8 +72,9 @@ public class ParteIsmael {
                 ___|		   		   |___
             ___|			   			   |___
      * @author Ismael Freire
+     * @version 2.0
      */
-    public static void figura9 (int numFilas){
+    public void figura9 (int numFilas){
         //Recorrer filas
         for(int filas=0 ; filas<=numFilas ; filas++){
             //imprimir espacios en blanco
@@ -189,9 +105,9 @@ public class ParteIsmael {
                         |_-_
                             |_+_
                                 |
-     * 
+     *
      */
-    public static void figura10(int numFilas){
+    public void figura10(int numFilas){
         String s = "|_-_";
         String s1 = " _+_";
         for(int filas=0 ; filas<=numFilas ; filas++){
@@ -211,17 +127,6 @@ public class ParteIsmael {
             }if(filas==numFilas){
                     System.out.println("|");
                 }            
-
-            /*if (filas>=1) {
-                System.out.println(s);
-                if(s=="|_+_"){
-                    s="|_-_";
-                 }else{
-                    s="|_+_";
-                }
-            }else{
-                System.out.println("_+_");
-            }*/
         }
     }
      
@@ -234,7 +139,7 @@ public class ParteIsmael {
     * 
     */
     
-    public static void figura11(int numFilas){
+    public void figura11(int numFilas){
         //String s = "|";
         int espacios = numFilas;
         for(int filas=0 ; filas<numFilas ; filas++){
@@ -291,7 +196,7 @@ public class ParteIsmael {
         1
      * 
      */
-    public static void  figura12(int posiciones){
+    public void  figura12(int posiciones){
 
         int contador=posiciones;
         for(int i=0 ; i<=posiciones ; i++){
@@ -324,7 +229,7 @@ public class ParteIsmael {
             1   6   14  16  9  2
      * 
      */
-    public static void figura18(int filas){
+    public void figura18(int filas){
         int[][] matriz = new int[filas][filas];
         // Llenar la matriz
         for (int i = 0; i < filas; i++) {
@@ -343,15 +248,14 @@ public class ParteIsmael {
             System.out.println();
         }
     }
-    //----------------
-
-    public static void cadena4(){
-            /**C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
+    /************************CADENA DE CARACTERES***************************/
+    /**C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
             Ejemplo, frase: ballena azul  
                     letra : l
                     salida: ba  ena azu 
      * 
      */
+    public void cadena4(){
         String cadena = new String();
         String letra = new String();
         System.out.println("Ingrese una frase");
@@ -364,13 +268,12 @@ public class ParteIsmael {
     }
 
     
-    
-    public static void cadena5 (){
-        /**C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
+    /**C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
             Ejemplo, frase: ballena
                     salida: AnEllAb 
-        * 
-        */
+    * 
+    */
+    public void cadena5 (){
         String cadena = new String();
         System.out.println("Ingrese una frase");
         Scanner sc = new Scanner(System.in);
@@ -387,13 +290,12 @@ public class ParteIsmael {
         System.out.println(reversaCadena);
     }
 
-
-    public static void cadena6(){
-            /**	C06)    Pedir una frase y presentarla inverida con las letras en mayusculas. 
+    /**	C06)    Pedir una frase y presentarla inverida con las letras en mayusculas. 
             Ejemplo, frase: ballena
                     salida: aNeLLaB 
-     * 
-     */
+    * 
+    */
+    public void cadena6(){
         String cadena = new String();
         System.out.println("Ingrese una frase:");
         Scanner sc = new Scanner(System.in);
@@ -410,27 +312,115 @@ public class ParteIsmael {
         System.out.println(reversaCadena);
     }
 
+    /************************LOADINGS***************************/
+    /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
+    / 100%
+    * 
+    */
+    public void loading1 (){
+        String barraCargandoString[]={"|", "/", "-", "\\"};
+        for(int i = 0; i <= 100; i++){
+            String c = barraCargandoString[i%4];
+            System.out.print("\r Loading "+ c +" "+ i +" %");
+            try {Thread.sleep(100);} 
+            catch (InterruptedException ie) {}
+        }
+        System.out.println();
+    }
 
 
-    
+     /**
+      *     L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
+        [###         ] 20%
+      * @autor Ismael Freire
+      * @version 2.0
+      */
+    public void loading2(){
+        char[] barra;
+        barra = new char[20];
+        System.out.println("Ingrese un caracter:");
+        Scanner sc = new Scanner(System.in);
+        char caracter = sc.next().charAt(0);
 
+        for (int longitud=1 ; longitud <= barra.length ; longitud++){
+            int porcentaje=(longitud*5);
+            System.out.print("[");
+            for(int i=0 ; i<barra.length ; i++){
+                if (i < longitud) {
+                    System.out.print(caracter);
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("] " + porcentaje + "%\r");
+            try {Thread.sleep(100);} catch (InterruptedException ie){}
+        }
+    }
+
+    /**
+    *   L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
+        [====/           ] 20%
+        * @autor Ismael Freire
+        version 2.0
+        
+    */
+    public void loading7(){
+        char[] barra;
+        barra = new char[20];
+        //System.out.println("Ingrese un caracter:");
+        //Scanner sc = new Scanner(System.in);
+        //char caracter = sc.next().charAt(0);
+        char caracter = '=';
+
+        for (int longitud=1 ; longitud <= barra.length ; longitud++){
+            int porcentaje=(longitud*5);
+            System.out.print("[");
+            for(int i=0 ; i<barra.length ; i++){
+                if (i < longitud) {
+                    barra[i]=caracter;
+                    System.out.print(barra[i]);
+                    barra[i+1]=puntaRotacional();
+                    System.out.print(barra[i+1]);
+                }else{                   
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("] " + porcentaje + "%\r");
+            try {Thread.sleep(200);} catch (InterruptedException ie){}
+        }
+    }    
+    private static char puntaRotacional() {
+        String barraCargandoString[]={"|", "/", "-", "\\"};
+        for(int i = 0; i <= 100; i++){
+            String c = barraCargandoString[i%4];
+            System.out.print("\r"+ c);
+            try {Thread.sleep(100);} 
+            catch (InterruptedException ie) {}
+        }
+        System.out.println();
+        return puntaRotacional();
+    }
+
+
+    /************************RECURSIVIDAD***************************/
     /**
      * R02) crear un metodo recursivo para obtener la suma(a,b)
      */
-    public static int sumaRecurisva(int a, int b){
+    public int sumaRecursiva(int a, int b){
         if(a==0){
             return b;
         }else if (b==0){
             return a;
         }else{
-            return 1+sumaRecurisva(a, b-1);
+            return 1+sumaRecursiva(a, b-1);
         }
+        
     }
 
     /**
      * R03) crear un metodo recursivo para obtener la multiplicacion(a,b)  
      */
-    public static int multiplicacionRecursiva(int a, int b){
+    public int multiplicacionRecursiva(int a, int b){
         if (a==0 || b==0) {
             return 0;
         } else{
@@ -438,6 +428,7 @@ public class ParteIsmael {
         }
     }
 }
+
 
     /*public static void main(String[] args) {
         System.out.println("Ingrese el numero de posiciones: ");
