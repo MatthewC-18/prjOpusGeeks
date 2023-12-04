@@ -39,7 +39,10 @@ public class Ejercicio2 {
          * Inicializar los datos
          */ 
         int i = 1;
+<<<<<<< HEAD
+=======
         int j = 0;
+>>>>>>> 076ec867fedf4e3204b7e5cb5e0e78d853c89602
         while (i <= nPosiciones) {
             System.out.print((2 * i - 1) + " 0 ");
             i++;

@@ -127,7 +127,7 @@ public class App {
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
             System.out.println("********************************");
             System.out.println("EJERCICIOS POLIRETOS");
-            System.out.println("Serie CARACTERES");
+            System.out.println("SERIE caracteres");
             // EJERCICIO 1
             System.out.println("\nSerie 1 de Caracteres:");
             objParteIF.serie1Char(nPosiciones);
@@ -151,9 +151,13 @@ public class App {
             System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
+<<<<<<< HEAD
+            
+=======
             Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
             System.out.println("\nSerie 6 de Caracter:");
             //oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
+>>>>>>> 076ec867fedf4e3204b7e5cb5e0e78d853c89602
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
             objParteIF.serie7Char(nPosiciones);        
@@ -190,7 +194,7 @@ public class App {
             
             //---------------------------------------- CADENA DE CARACTERES ----------------------------------------------------------
             System.out.println();
-            System.out.println("Cadena de caracteres");
+            System.out.println("CADENA de caracteres");
             //EJERCICIO 4
             System.out.println("\nCadena 4");
             objParteIF.cadena4();
@@ -212,9 +216,20 @@ public class App {
             //EJERCICIO 2
             System.out.println("\nLoading 2");
             objParteIF.loading2();
+            System.out.println();
             //EJERCICIO 7
-        
-            
+            //---------------------------------------- LOAGINGS --------------------------------------------------------
+            System.out.println();
+            System.out.println("RECURSIVIDAD");
+            //SUMA RECURSIVA
+            System.out.println("\nSuma recursiva");
+            int resultado1 = objParteIF.sumaRecursiva(9, 5);
+            System.out.println(resultado1);
+            //MULTIPLICACION RECURSIVA
+            System.out.println("\nMultiplicacion recursiva");
+            int resultado2 = objParteIF.multiplicacionRecursiva(3, 9);
+            System.out.println(resultado2);
+
         }
         System.out.println();
     }
