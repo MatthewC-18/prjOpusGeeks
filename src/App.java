@@ -138,26 +138,18 @@ public class App {
             Ejercicio3SC oEjercicio3SC = new Ejercicio3SC();
             System.out.println("\nSerie 3 de Caracter:");
             oEjercicio3SC.ejercicio3SCFOR(nPosiciones);
-            
-
             // EJERCICIO 4
             Ejercicio4SC oEjercicio4SC = new Ejercicio4SC();
             System.out.println("\nSerie 4 de Caracter:");
             oEjercicio4SC.ejercicio4SCFOR(nPosiciones);
-
-
             // EJERCICIO 5
             Ejercicio5SC oEjercicio5SC = new Ejercicio5SC();
             System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
-<<<<<<< HEAD
-            
-=======
-            Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
             System.out.println("\nSerie 6 de Caracter:");
+            //Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
             //oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
->>>>>>> 076ec867fedf4e3204b7e5cb5e0e78d853c89602
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
             objParteIF.serie7Char(nPosiciones);        
