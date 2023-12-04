@@ -125,8 +125,9 @@ public class App {
             System.out.println();
 
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
-
+            System.out.println("********************************");
             System.out.println("EJERCICIOS POLIRETOS");
+            System.out.println("Serie CARACTERES");
             // EJERCICIO 1
             System.out.println("\nSerie 1 de Caracteres:");
             objParteIF.serie1Char(nPosiciones);
@@ -150,7 +151,9 @@ public class App {
             System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
-
+            Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
+            System.out.println("\nSerie 6 de Caracter:");
+            //oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
             objParteIF.serie7Char(nPosiciones);        
@@ -158,13 +161,51 @@ public class App {
             Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
             System.out.println("\nSerie 8 de Caracter:");
             oEjercicio8SC.ejercicio8SCFOR(nPosiciones);
+<<<<<<< HEAD
             FiguraMT oFiguraMT = new FiguraMT();
             System.out.println("\nFiguras:");
             oFiguraMT.FiguraMT(nPosiciones);
+=======
+            System.out.println();
+>>>>>>> e9f6a452fc40e961bf1e2f2205df2f043f8c81c4
             // EJERCICIO 9
-
+            
+            //---------------------------------------- FIGURAS --------------------------------------------------------
+            System.out.println();
+            System.out.println("FIGURAS");            
+            //EJERCICIO 9
+            System.out.println("\nFigura 9");
+            objParteIF.figura9(nPosiciones);
+            //FIGURA 10
+            System.out.println("\nFigura 10");
+            objParteIF.figura10(nPosiciones);
+            //FIGURA 11 (PROBLEMA)
+            //FIGURA 12
+            System.out.println("\nFigura 12");
+            objParteIF.figura12(nPosiciones);
+            //FIGURA 17 (PROBLEMA)
+            //FIGURA 18
+            System.out.println("\nFigura 18");
+            objParteIF.figura18(nPosiciones);
+            
+            //---------------------------------------- CADENA DE CARACTERES ----------------------------------------------------------
+            System.out.println();
+            System.out.println("Cadena de caracteres");
+            //EJERCICIO 4
+            System.out.println("\nCadena 4");
+            objParteIF.cadena4();
+            //EJERCICIO 5
+            System.out.println("\nCadena 5");
+            objParteIF.cadena5();
+            //EJERCICIO 6
+            System.out.println("\nCadena 6");
+            objParteIF.cadena6();
+            
+            
             //---------------------------------------- ARRAYS ----------------------------------------------------------
-            //---------------------------------------- LOAGINGS ----------------------------------------------------------
+            //---------------------------------------- LOAGINGS --------------------------------------------------------
+            System.out.println();
+            System.out.println("Loadings");            
             //EJERCICIO 1
             System.out.println("\nLoading 1:");
             objParteIF.loading1();
@@ -173,6 +214,7 @@ public class App {
             objParteIF.loading2();
             //EJERCICIO 7
         
+            
         }
         System.out.println();
     }
