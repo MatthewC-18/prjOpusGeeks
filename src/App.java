@@ -127,7 +127,7 @@ public class App {
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
             System.out.println("********************************");
             System.out.println("EJERCICIOS POLIRETOS");
-            System.out.println("Serie CARACTERES");
+            System.out.println("SERIE caracteres");
             // EJERCICIO 1
             System.out.println("\nSerie 1 de Caracteres:");
             objParteIF.serie1Char(nPosiciones);
@@ -184,7 +184,7 @@ public class App {
             
             //---------------------------------------- CADENA DE CARACTERES ----------------------------------------------------------
             System.out.println();
-            System.out.println("Cadena de caracteres");
+            System.out.println("CADENA de caracteres");
             //EJERCICIO 4
             System.out.println("\nCadena 4");
             objParteIF.cadena4();
@@ -206,9 +206,18 @@ public class App {
             //EJERCICIO 2
             System.out.println("\nLoading 2");
             objParteIF.loading2();
+            System.out.println();
             //EJERCICIO 7
-        
-            
+            //---------------------------------------- LOAGINGS --------------------------------------------------------
+            System.out.println();
+            System.out.println("RECURSIVIDAD");
+            //SUMA RECURSIVA
+            System.out.println("\nSuma recursiva");
+            objParteIF.sumaRecursiva(9, 5);
+            //System.out.println(sumaRecursiva(9,5));
+            //MULTIPLICACION RECURSIVA
+            System.out.println("\nMultiplicacion recursiva");
+            objParteIF.multiplicacionRecursiva(3, 9);
         }
         System.out.println();
     }

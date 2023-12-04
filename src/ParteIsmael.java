@@ -353,7 +353,7 @@ public class ParteIsmael {
                 }
             }
             System.out.print("] " + porcentaje + "%\r");
-            try {Thread.sleep(200);} catch (InterruptedException ie){}
+            try {Thread.sleep(100);} catch (InterruptedException ie){}
         }
     }
 
@@ -402,33 +402,25 @@ public class ParteIsmael {
     }
 
 
-
-    
-    //----------------
-
-    
-
-
-
-    
-
+    /************************RECURSIVIDAD***************************/
     /**
      * R02) crear un metodo recursivo para obtener la suma(a,b)
      */
-    public static int sumaRecurisva(int a, int b){
+    public int sumaRecursiva(int a, int b){
         if(a==0){
             return b;
         }else if (b==0){
             return a;
         }else{
-            return 1+sumaRecurisva(a, b-1);
+            return 1+sumaRecursiva(a, b-1);
         }
+        
     }
 
     /**
      * R03) crear un metodo recursivo para obtener la multiplicacion(a,b)  
      */
-    public static int multiplicacionRecursiva(int a, int b){
+    public int multiplicacionRecursiva(int a, int b){
         if (a==0 || b==0) {
             return 0;
         } else{
@@ -436,6 +428,7 @@ public class ParteIsmael {
         }
     }
 }
+
 
     /*public static void main(String[] args) {
         System.out.println("Ingrese el numero de posiciones: ");
