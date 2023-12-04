@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Figura1",
+            "request": "launch",
+            "mainClass": "Figura1",
+            "projectName": "prjPoliretoGrupo2_52cbf07a"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio6SC",
             "request": "launch",
             "mainClass": "Ejercicio6SC",
