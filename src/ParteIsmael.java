@@ -322,7 +322,7 @@ public class ParteIsmael {
         for(int i = 0; i <= 100; i++){
             String c = barraCargandoString[i%4];
             System.out.print("\r Loading "+ c +" "+ i +" %");
-            try {Thread.sleep(100);} 
+            try {Thread.sleep(70);} 
             catch (InterruptedException ie) {}
         }
         System.out.println();
@@ -353,7 +353,7 @@ public class ParteIsmael {
                 }
             }
             System.out.print("] " + porcentaje + "%\r");
-            try {Thread.sleep(100);} catch (InterruptedException ie){}
+            try {Thread.sleep(70);} catch (InterruptedException ie){}
         }
     }
 

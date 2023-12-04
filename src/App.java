@@ -213,11 +213,13 @@ public class App {
             System.out.println("RECURSIVIDAD");
             //SUMA RECURSIVA
             System.out.println("\nSuma recursiva");
-            objParteIF.sumaRecursiva(9, 5);
-            //System.out.println(sumaRecursiva(9,5));
+            int resultado1 = objParteIF.sumaRecursiva(9, 5);
+            System.out.println(resultado1);
             //MULTIPLICACION RECURSIVA
             System.out.println("\nMultiplicacion recursiva");
-            objParteIF.multiplicacionRecursiva(3, 9);
+            int resultado2 = objParteIF.multiplicacionRecursiva(3, 9);
+            System.out.println(resultado2);
+
         }
         System.out.println();
     }
