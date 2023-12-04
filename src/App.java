@@ -122,9 +122,11 @@ public class App {
             oEjercicio11.Ejercicio12Do(nPosiciones);
             System.out.println("\nSerie 12 con while: ");
             oEjercicio11.Ejercicio12While(nPosiciones);
+            System.out.println();
 
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
 
+            System.out.println("EJERCICIOS POLIRETOS");
             // EJERCICIO 1
             System.out.println("\nSerie 1 de Caracteres:");
             objParteIF.serie1Char(nPosiciones);
