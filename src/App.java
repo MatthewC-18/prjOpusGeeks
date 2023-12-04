@@ -151,7 +151,13 @@ public class App {
             System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
+<<<<<<< HEAD
             
+=======
+            Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
+            System.out.println("\nSerie 6 de Caracter:");
+            //oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
+>>>>>>> 076ec867fedf4e3204b7e5cb5e0e78d853c89602
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
             objParteIF.serie7Char(nPosiciones);        
@@ -211,11 +217,13 @@ public class App {
             System.out.println("RECURSIVIDAD");
             //SUMA RECURSIVA
             System.out.println("\nSuma recursiva");
-            objParteIF.sumaRecursiva(9, 5);
-            //System.out.println(sumaRecursiva(9,5));
+            int resultado1 = objParteIF.sumaRecursiva(9, 5);
+            System.out.println(resultado1);
             //MULTIPLICACION RECURSIVA
             System.out.println("\nMultiplicacion recursiva");
-            objParteIF.multiplicacionRecursiva(3, 9);
+            int resultado2 = objParteIF.multiplicacionRecursiva(3, 9);
+            System.out.println(resultado2);
+
         }
         System.out.println();
     }
