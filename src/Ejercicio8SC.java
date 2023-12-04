@@ -7,9 +7,8 @@
 
 */
 public class Ejercicio8SC {
-    public static void main(String[] args) {
-    }
-    public static void ejercicio8SCFOR(int nPosiciones) {
+
+    public void ejercicio8SCFOR(int nPosiciones) {
         for (int i = 0; i < nPosiciones; i++) {
             char letra = (char) ('a' + i);
             String repetir = repetirCaracter(letra, i + 1);
