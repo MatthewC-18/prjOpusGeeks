@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio6SC",
+            "request": "launch",
+            "mainClass": "Ejercicio6SC",
+            "projectName": "prjOpusGeeks_f053bf5a"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio8SC",
             "request": "launch",
             "mainClass": "Ejercicio8SC",
