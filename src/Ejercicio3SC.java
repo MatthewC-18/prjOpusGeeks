@@ -9,8 +9,8 @@
 */
 
 public class Ejercicio3SC {
-
-    public void ejercicio3SCFOR(int nPosiciones) {
+    
+    public  void ejercicio3SCFOR(int nPosiciones) {
         int contadorSignos = 2;
 
         for (int i = 0; i < nPosiciones; i++) {

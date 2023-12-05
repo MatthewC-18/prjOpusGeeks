@@ -157,7 +157,13 @@ public class App {
             Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
             System.out.println("\nSerie 8 de Caracter:");
             oEjercicio8SC.ejercicio8SCFOR(nPosiciones);
+<<<<<<< HEAD
+            FiguraMT oFiguraMT = new FiguraMT();
+            System.out.println("\nFiguras:");
+            oFiguraMT.FiguraMT(nPosiciones);
+=======
             System.out.println();
+>>>>>>> e9f6a452fc40e961bf1e2f2205df2f043f8c81c4
             // EJERCICIO 9
             
             //---------------------------------------- FIGURAS --------------------------------------------------------
@@ -219,6 +225,7 @@ public class App {
         }
         System.out.println();
     }
+        
 }
 
 //
