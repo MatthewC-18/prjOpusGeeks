@@ -5,10 +5,11 @@ public class Ejercicio4CC {
             Ejemplo, frase: ballena azul  
                     letra : l
                     salida: ba  ena azu 
-     * ♣
-     * 
+     * @autor Ismael Freire
+     * @version 2.0
+     * Fecha 03/12/2023
      */
-    public void cadena4(){
+    public static void cadena4(){
         String cadena = new String();
         String letra = new String();
         System.out.println("Ingrese una frase");
