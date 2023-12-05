@@ -130,10 +130,10 @@ public class App {
             System.out.println("SERIE caracteres");
             // EJERCICIO 1
             System.out.println("\nSerie 1 de Caracteres:");
-            objParteIF.serie1Char(nPosiciones);
+            Ejercicio1SC.serie1Char(nPosiciones);
             // EJERCICIO 2
             System.out.println("\nSerie 2 de Caracteres:");
-            objParteIF.serei2Char(nPosiciones);
+            Ejercicio2SC.serei2Char(nPosiciones);
             // EJERCICIO 3
             Ejercicio3SC oEjercicio3SC = new Ejercicio3SC();
             System.out.println("\nSerie 3 de Caracter:");
@@ -152,7 +152,7 @@ public class App {
             //oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
-            objParteIF.serie7Char(nPosiciones);        
+            Ejercicio7SC.serie7Char(nPosiciones);           
             // EJERCICIO 8
             Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
             System.out.println("\nSerie 8 de Caracter:");
@@ -165,18 +165,18 @@ public class App {
             System.out.println("FIGURAS");            
             //EJERCICIO 9
             System.out.println("\nFigura 9");
-            objParteIF.figura9(nPosiciones);
+            Ejercicio9F.figura9(nPosiciones);
             //FIGURA 10
             System.out.println("\nFigura 10");
-            objParteIF.figura10(nPosiciones);
+            Ejercicio10F.figura10(nPosiciones);
             //FIGURA 11 (PROBLEMA)
             //FIGURA 12
             System.out.println("\nFigura 12");
-            objParteIF.figura12(nPosiciones);
+            Ejercicio10F.figura10(nPosiciones);
             //FIGURA 17 (PROBLEMA)
             //FIGURA 18
             System.out.println("\nFigura 18");
-            objParteIF.figura18(nPosiciones);
+            Ejercicio18F.figura18(nPosiciones);
             
             //---------------------------------------- CADENA DE CARACTERES ----------------------------------------------------------
             System.out.println();

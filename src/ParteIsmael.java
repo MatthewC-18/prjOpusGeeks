@@ -6,129 +6,10 @@
 import java.util.Scanner;
 
 public class ParteIsmael {
-    // S1: + - + - + - + ...
-    /**
-     * @autor Ismael Freire
-     * @version 1.0
-    */    
-    public void serie1Char(int posiciones) {
-
-        char signo = '+';
-        for (int i = 0; i < posiciones; i++) {
-            System.out.print(signo + " ");
-            if (signo=='+') {
-                signo = '-';
-            }else{
-                signo = '+';
-            }
-        }   
-        System.out.println();
-    }
-
-    public void serei2Char(int posiciones){
-        /** S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...
-         *       1+1 2  2+1 3+2   5+3       8+5
-         * @autor Ismael Freire
-         * @version 1.0
-         */
-        int variable=1;
-        int anterior=0;
-        int auxiliar;
-        for(int i=0 ; i < posiciones; i++){ 
-            String serieChar = "+".repeat(variable);
-            System.out.print(serieChar + " ");
-            auxiliar = variable;
-            variable += anterior;
-            anterior = auxiliar;
-        }
-        System.out.println();
-    }
-
-    public void serie7Char(int posiciones){
-        /** S7:  aa   bbbb  cccccc  dddddddd    ...
-        * @autor Ismael Freire
-        * @version 1.0
-        */
-        int contadorElementos=0;
-        char letra = 'a';
-        for(int i=2 ; contadorElementos<posiciones ; i+=2){
-            //System.out.print(i);
-            for(int j=0 ; j<i ; j++){
-                System.out.print(letra);
-            }
-            System.out.print(" ");
-            letra++;
-            contadorElementos++;
-        }
-        System.out.println();
-    }
 
     /************************FIGURAS***************************/
-    /** 
-     * F9:
-                            ___   
-                        ___|   |___
-                    ___|	   	   |___
-                ___|		   		   |___
-            ___|			   			   |___
-     * @author Ismael Freire
-     * @version 2.0
-     */
-    public void figura9 (int numFilas){
-        //Recorrer filas
-        for(int filas=0 ; filas<=numFilas ; filas++){
-            //imprimir espacios en blanco
-            for(int espacioBlanco=1 ; espacioBlanco<=numFilas-filas ; espacioBlanco++){
-                System.out.print("    ");
-            }
-            // Imprimir el lado izquierdo
-            if (filas>=1) {
-                System.out.print("___|");
-            }
-            // Bucle para imprimir espacios en blanco entre los lados
-            for (int k = 0; k < 2*filas-1; k++) {
-                System.out.print("    ");
-            }
-            
-            if (filas == 0) {
-                System.out.println("____");
-            }else{
-                // Imprimir el lado derecho
-                System.out.println("|___");
-            }
-        }
-    }
-    /**F10:
-            _+_
-                |_-_
-                    |_+_
-                        |_-_
-                            |_+_
-                                |
-     *
-     */
-    public void figura10(int numFilas){
-        String s = "|_-_";
-        String s1 = " _+_";
-        for(int filas=0 ; filas<=numFilas ; filas++){
-            for(int espacioBlanco=0 ; espacioBlanco<2*filas ; espacioBlanco++){
-                System.out.print("  ");
-            }
-            
-            if (filas==0) {
-                System.out.println(s1);
-            }else if(filas >= 1 && filas<numFilas){
-                System.out.println(s);
-                if(s=="|_-_"){
-                    s="|_+_";
-                 }else{
-                    s="|_-_";
-                }           
-            }if(filas==numFilas){
-                    System.out.println("|");
-                }            
-        }
-    }
+
+
      
     /**F11:
             | _ 
@@ -183,30 +64,7 @@ public class ParteIsmael {
     }
 
 
-    /**F12:
-        ...
-        123456789
-        12345678
-        1234567
-        123456
-        12345
-        1234
-        123
-        12
-        1
-     * 
-     */
-    public void  figura12(int posiciones){
 
-        int contador=posiciones;
-        for(int i=0 ; i<=posiciones ; i++){
-            for(int j=1 ; j<=contador ; j++){
-                System.out.print(j);
-            }
-            System.out.println();
-            contador--;
-        }
-    }
     
     /**F17:
             1				1
@@ -220,52 +78,8 @@ public class ParteIsmael {
 
     
     
-        /**F18:
-            2
-            1   2
-            1   3   2
-            1   4   5   2
-            1   5   9   7  2
-            1   6   14  16  9  2
-     * 
-     */
-    public void figura18(int filas){
-        int[][] matriz = new int[filas][filas];
-        // Llenar la matriz
-        for (int i = 0; i < filas; i++) {
-            matriz[i][0] = 1;
-            matriz[i][i] = 2;
 
-            for (int j = 1; j < i; j++) {
-                matriz[i][j] = matriz[i - 1][j - 1] + matriz[i - 1][j];
-            }
-        }
-        // Imprimir la matriz 
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print(matriz[i][j] + "   ");
-            }
-            System.out.println();
-        }
-    }
     /************************CADENA DE CARACTERES***************************/
-    /**C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
-            Ejemplo, frase: ballena azul  
-                    letra : l
-                    salida: ba  ena azu 
-     * 
-     */
-    public void cadena4(){
-        String cadena = new String();
-        String letra = new String();
-        System.out.println("Ingrese una frase");
-        Scanner sc = new Scanner(System.in);
-        cadena = sc.nextLine().toLowerCase();
-        System.out.println("Ingrese la letra a eliminar:");
-        letra = sc.nextLine().toLowerCase();
-        String cadenaRem = cadena.replaceAll(letra, " ");
-        System.out.println(cadenaRem);
-    }
 
     
     /**C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
