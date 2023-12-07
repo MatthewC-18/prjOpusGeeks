@@ -7,7 +7,7 @@ public class Ejercicio4CC {
                     salida: ba  ena azu 
      * @autor Ismael Freire
      * @version 2.0
-     * Fecha 03/12/2023
+     * @date 03/12/2023
      */
     public static void cadena4(){
         String cadena = new String();
