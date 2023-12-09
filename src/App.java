@@ -62,7 +62,7 @@ public class App {
             System.out.println("33. ");
             System.out.println("34. ");
             System.out.println("35. Ejercicio 15F");
-            System.out.println("36. ");
+            System.out.println("36. Ejercicio 16F");
             System.out.println("37. ");
             System.out.println("38. ");
             System.out.println("39. Ejercicio 19F");
@@ -283,7 +283,11 @@ public class App {
                     break;
                 case 20:
                     // Ejercicio 9SC
-                    
+                    Scanner Ejercicio9SCFJ = new Scanner(System.in);
+                    System.out.print("Ingrese un número entero para repeticiones: ");
+                    int repeticiones = Ejercicio9SCFJ.nextInt();
+                    Ejercicio9SC miObjeto = new Ejercicio9SC();
+                    miObjeto.anS9C(repeticiones);
                     break;
                     
                 //--------------------------------FIGURAS------------------------------------
@@ -360,7 +364,11 @@ public class App {
                     break;
                 case 36:
                     // Ejercicio 16F
-         
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("INGRESE LA CANTIDAD DESEADA PARA EL PATRON: ");
+                    int cantidad = scanner.nextInt();
+                    Ejercicio16F miObjeto = new Ejercicio16F();
+                    miObjeto.F16(cantidad);
                     break;
                 case 37:
          
