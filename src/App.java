@@ -283,9 +283,7 @@ public class App {
                     break;
                 case 20:
                     // Ejercicio 9SC
-                    Ejercicio9SC util1 = new Ejercicio9SC();
-                    String resultado1 = util1.generarSerieFibonacci(nPosiciones);
-                    System.out.println(resultado1);
+                    
                     break;
                     
                 //--------------------------------FIGURAS------------------------------------
