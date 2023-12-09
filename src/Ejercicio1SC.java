@@ -3,6 +3,7 @@ public class Ejercicio1SC {
     /**
      * @autor Ismael Freire
      * @version 1.0
+     * @date 05/12/2023
     */    
     public static void serie1Char(int posiciones) {
 

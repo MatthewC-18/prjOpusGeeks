@@ -4,7 +4,6 @@ import java.util.Scanner;
 import javax.sound.sampled.SourceDataLine;
 
 public class App {
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -17,7 +16,6 @@ public class App {
         System.out.println("\n*********************************");
         System.out.println("INGRESE UN NUMERO: ");
         int nPosiciones = sc.nextInt();
-        
         int opcion;
 
         do {
@@ -36,13 +34,13 @@ public class App {
             System.out.println("11. Ejercicio 11SN");
             
             System.out.println("-----------------------SERIES DE CARACTERES--------------------------------");
-            System.out.println("12. ");
-            System.out.println("13. ");
+            System.out.println("12. Ejercicio 1SC");
+            System.out.println("13. Ejercicio 2SC");
             System.out.println("14. ");
             System.out.println("15. ");
             System.out.println("16. ");
             System.out.println("17. Ejercicio 6SC");
-            System.out.println("18. ");
+            System.out.println("18. Ejercicio 7SC");
             System.out.println("19. ");
             System.out.println("20. Ejercicio 9SC");
             
@@ -55,25 +53,25 @@ public class App {
             System.out.println("26. Ejercicio 6F");
             System.out.println("27. Ejercicio 7F");
             System.out.println("28. Ejercicio 8F");
-            System.out.println("29. ");
-            System.out.println("30. ");
-            System.out.println("31. ");
-            System.out.println("32. ");
+            System.out.println("29. Ejercicio 9F");
+            System.out.println("30. Ejercicio 10F");
+            System.out.println("31. Ejercicio 11F");
+            System.out.println("32. Ejercicio 12F");
             System.out.println("33. ");
             System.out.println("34. ");
             System.out.println("35. Ejercicio 15F");
             System.out.println("36. Ejercicio 16F");
-            System.out.println("37. ");
-            System.out.println("38. ");
+            System.out.println("37. Ejercicio 17F");
+            System.out.println("38. Ejercicio 18F");
             System.out.println("39. Ejercicio 19F");
             
             System.out.println("--------------------------CADENA DE CARACTERES-----------------------------");
             System.out.println("40. Ejercicio 1C");
             System.out.println("41. Ejercicio 2C");
             System.out.println("42. Ejercicio 3C");
-            System.out.println("43. ");
-            System.out.println("44. ");
-            System.out.println("45. ");
+            System.out.println("43. Ejercicio 4C");
+            System.out.println("44. Ejercicio 5C");
+            System.out.println("45. Ejercicio 6C");
             System.out.println("46. ");
             System.out.println("47. ");
             System.out.println("48. ");
@@ -86,8 +84,8 @@ public class App {
             System.out.println("53. ");
             
             System.out.println("---------------------------------LOADINGS---------------------------------");  
-            System.out.println("54. ");
-            System.out.println("55. ");
+            System.out.println("54. Ejercicio 1L");
+            System.out.println("55. Ejercicio 2L");
             System.out.println("56. ");
             System.out.println("57. ");
             System.out.println("58. ");
@@ -99,8 +97,8 @@ public class App {
             
             System.out.println("---------------------------------RECURSION---------------------------------");
             System.out.println("64. ");
-            System.out.println("65. ");
-            System.out.println("66. ");
+            System.out.println("65. Ejercicio 2R");
+            System.out.println("66. Ejercicio 3R");
             System.out.println("67. ");
             System.out.println("68. Ejercicio 5R");
             System.out.println("69. Ejercicio 6R");
@@ -339,7 +337,7 @@ public class App {
                 case 30:
                     //FIGURA 10
                     System.out.println("\nFigura 10");
-                    Ejercicio10L.figura10(nPosiciones);
+                    Ejercicio10F.figura10(nPosiciones);
                     break;
                 case 31:
          
@@ -347,7 +345,7 @@ public class App {
                 case 32:
                     //FIGURA 12
                     System.out.println("\nFigura 12");
-                    Ejercicio10L.figura10(nPosiciones);
+                    Ejercicio12F.figura12(nPosiciones);
                     break;
                 case 33:
                     
@@ -371,7 +369,9 @@ public class App {
                     Ejercicio16f.F16(cantidad);
                     break;
                 case 37:
-         
+                    //Figura 17
+                    System.out.println("\nFigura 17");
+                    Ejercicio17F.figura17(nPosiciones);
                     break;
                 case 38:
                     //FIGURA 18
@@ -505,14 +505,14 @@ public class App {
                 case 65:
                     //SUMA RECURSIVA 2R
                     System.out.println("\nSuma recursiva");
-                    int resultado1 = Ejercicio2R.sumaRecursiva(9, 3);
-                    System.out.println(resultado1);
+                    int suma = Ejercicio2R.sumaRecursiva(9, 3);
+                    System.out.println(suma);
                     break;
                 case 66:
                     //MULTIPLICACION RECURSIVA
                     System.out.println("\nMultiplicacion recursiva");
-                    int resultado2 = Ejercicio3R.multiplicacionRecursiva(3, 7);
-                    System.out.println(resultado2);
+                    int multiplicacion = Ejercicio3R.multiplicacionRecursiva(3, 7);
+                    System.out.println(multiplicacion);
                     break;
                 case 67:
          

@@ -10,7 +10,7 @@ public class Ejercicio18F {
      *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
      * @autor Ismael Freire
      * @version 2.0
-     * Fecha: 04/12/2023
+     * @date: 04/12/2023
      */
     public static void figura18(int filas){
         int[][] matriz = new int[filas][filas];

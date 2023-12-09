@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ParteIsmael",
+            "request": "launch",
+            "mainClass": "ParteIsmael",
+            "projectName": "prjOpusGeeks_3c913eac"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",
