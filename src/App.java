@@ -367,8 +367,8 @@ public class App {
                     Scanner scanner = new Scanner(System.in);
                     System.out.print("INGRESE LA CANTIDAD DESEADA PARA EL PATRON: ");
                     int cantidad = scanner.nextInt();
-                    Ejercicio16F miObjeto = new Ejercicio16F();
-                    miObjeto.F16(cantidad);
+                    Ejercicio16F Ejercicio16f = new Ejercicio16F();
+                    Ejercicio16f.F16(cantidad);
                     break;
                 case 37:
          
