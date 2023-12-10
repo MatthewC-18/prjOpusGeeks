@@ -8,8 +8,8 @@
 */
 import java.util.Scanner;
 
-public class Loading9 {
-    public static void main(String[] args) {
+public class Ejercicio9L {
+    public static void loading9() {
         ejecutarLoading9();
     }
 
