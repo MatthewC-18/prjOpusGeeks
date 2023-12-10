@@ -78,8 +78,8 @@ public class App {
             System.out.println("---------------------------------ARRAYS-----------------------------------");
             System.out.println("49. ");
             System.out.println("50. ");
-            System.out.println("51. Ejercicio3A");
-            System.out.println("52. ");
+            System.out.println("51. Ejercicio 3A");
+            System.out.println("52. Ejercicio 4A");
             System.out.println("53. ");
             
             System.out.println("---------------------------------LOADINGS---------------------------------");  
@@ -479,7 +479,9 @@ public class App {
                     Ejercicio3A.arrayGrafico();
                     break;
                 case 52:
-         
+                    //Ejercicio 4A
+                    System.out.println("\nArrays 4:");
+                    Ejercicio4A.matrizNombre();;
                     break;
                 case 53:
                     // Ejercicio 5A

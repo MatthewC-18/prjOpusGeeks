@@ -1,9 +1,10 @@
 public class Ejercicio7SC {
     /** S7:  aa   bbbb  cccccc  dddddddd    ...
-    *Copyright (C) 2K23, grupo2
-    *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
-    * @autor Ismael Freire
-    * @version 1.0
+     *Copyright (C) 2K23, grupo2
+     *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
+     * @autor Ismael Freire
+     * @version 1.0
+     * @date 05/12/2023
     */    
     public static void serie7Char(int posiciones){
 

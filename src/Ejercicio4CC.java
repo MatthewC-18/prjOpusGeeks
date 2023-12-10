@@ -5,6 +5,8 @@ public class Ejercicio4CC {
             Ejemplo, frase: ballena azul  
                     letra : l
                     salida: ba  ena azu 
+     *Copyright (C) 2K23, grupo2
+     *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
      * @autor Ismael Freire
      * @version 2.0
      * @date 03/12/2023

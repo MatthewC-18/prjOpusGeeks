@@ -15,9 +15,11 @@ public class Ejercicio2L {
         barra = new char[20];
         System.out.println("Ingrese un caracter:");
         Scanner sc = new Scanner(System.in);
+        //tomar el string y transformarlo a caracter
         char caracter = sc.next().charAt(0);
 
         for (int longitud=1 ; longitud <= barra.length ; longitud++){
+            //multiplicar el porcentaje para que vaya de acuerdo a la longitud de la barra
             int porcentaje=(longitud*5);
             System.out.print("[");
             for(int i=0 ; i<barra.length ; i++){
