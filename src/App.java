@@ -35,12 +35,12 @@ public class App {
             System.out.println("-----------------------SERIES DE CARACTERES--------------------------------");
             System.out.println("12. Ejercicio 1SC");
             System.out.println("13. Ejercicio 2SC");
-            System.out.println("14. ");
-            System.out.println("15. ");
-            System.out.println("16. ");
+            System.out.println("14. Ejercicio 3SC");
+            System.out.println("15. Ejercicio 4SC");
+            System.out.println("16. Ejercicio 5SC");
             System.out.println("17. Ejercicio 6SC");
             System.out.println("18. Ejercicio 7SC");
-            System.out.println("19. ");
+            System.out.println("19. Ejercicio 8SC");
             System.out.println("20. Ejercicio 9SC");
             
             System.out.println("--------------------------------FIGURAS------------------------------------");
