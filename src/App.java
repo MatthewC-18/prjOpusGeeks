@@ -196,7 +196,7 @@ public class App {
         
         }
         System.out.println();
-=======
+
             System.out.println("-----------------------SERIES DE CARACTERES--------------------------------");
             System.out.println("12. Ejercicio 1SC");
             System.out.println("13. Ejercicio 2SC");
