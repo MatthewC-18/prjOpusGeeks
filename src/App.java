@@ -483,7 +483,11 @@ public class App {
                     break;
                 case 53:
                     // Ejercicio 5A
-                    
+                    Scanner EjercicioA5 = new Scanner(System.in);
+                    System.out.println("Ingresa tu nombre completo:");
+                    String NombreCompletoFJ = EjercicioA5.nextLine();
+                    Ejercicio5A generador = new Ejercicio5A();
+                    generador.generarMatrizAleatoria(NombreCompletoFJ);
                     break;
                     
                 //---------------------------------LOADINGS---------------------------------
