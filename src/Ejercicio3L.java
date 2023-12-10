@@ -2,13 +2,15 @@ import java.util.Scanner;
 /**
 *Copyright (C) 2K23, grupo2
 *(grupo2 - Opus Geeks), matthewcedeno92@gmail.com
-*@Version 1.0.
-*@author: Matthew Cedeno.
-*FECHA: 01/12/2023.
 
 */
-public class Loading3 {
-    public void ejecutarLoading3() {
+/**
+*@Version 1.0.
+*@author: Matthew Cedeno.
+*@DATE: 01/12/2023.
+ */
+public class Ejercicio3L{
+    public static void loading3() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese un carácter: ");

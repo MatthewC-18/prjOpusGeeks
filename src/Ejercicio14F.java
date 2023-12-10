@@ -7,13 +7,9 @@ import java.util.Scanner;
 *FECHA: 01/12/2023.
 
 */
-public class Figura14 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingrese la cantidad de líneas del Triángulo de Pascal: ");
-        int n = scanner.nextInt();
-
+public class Ejercicio14F {
+    public static void figura14(int n ) {
+       
         // Imprimir el Triángulo de Pascal
         for (int i = 0; i < n; i++) {
             // Espacios en blanco para alinear los números
@@ -29,9 +25,6 @@ public class Figura14 {
             // Cambiar de línea después de imprimir cada fila
             System.out.println();
         }
-
-        // Cerrar el scanner al finalizar
-        scanner.close();
     }
 
     // Método para calcular el coeficiente binomial (n choose k)

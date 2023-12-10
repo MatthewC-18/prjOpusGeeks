@@ -454,15 +454,30 @@ public class App {
                     
                 //--------------------------------FIGURAS------------------------------------
                 case 21:
+                    //Figura 1
+                    Scanner EjercicioF1 = new Scanner(System.in);
+                    System.out.println("Ingrese el size que desea:");
+                    int size = EjercicioF1.nextInt();
+                    Ejercicio1F.figura1(size);
                     
                     break;
                 case 22:
+                    //Figura 2
+                    Scanner EjercicioF2 = new Scanner(System.in);
+                    System.out.println("Ingrese el size que desea:");
+                    int tamano = EjercicioF2.nextInt();
+                    Ejercicio2F.figura2(tamano);
          
                     break;
                 case 23:
          
                     break;
                 case 24:
+                    //Figura 4 
+                    Scanner EjercicioF4 = new Scanner(System.in);
+                    System.out.println("/n Ingresa el tamano que deseas");
+                    int tamanoF4 = EjercicioF4.nextInt();
+                    Ejercicio4F.figura4(tamanoF4);
          
                     break;
                 case 25:
@@ -512,9 +527,14 @@ public class App {
                     Ejercicio12F.figura12(nPosiciones);
                     break;
                 case 33:
-                    
+                    //Figura 13
+                    System.out.println("\nFigura 13");
+                    Ejercicio13F.figura13(nPosiciones);
                     break;
                 case 34:
+                    //Figura 14
+                    System.out.println("\nFigura14");
+                    Ejercicio14F.figura14(nPosiciones);
          
                     break;
                 case 35:
@@ -591,19 +611,32 @@ public class App {
                     Ejercicio6CC.cadena6();
                     break;
                 case 46:
-                    
+                //EJERCICIO 7C
+                    System.out.println("\nCadena 7");
+                    Ejercicio7CC.cadena7();
                     break;
                 case 47:
-         
+                    //Ejercico 8C
+                    System.out.println("\nCadena 8");
+                    Ejercicio8CC.cadena8();
                     break;
                 case 48:
+                    //Ejercicio 9C
+                    System.out.println("\nCadena 9");
+                    Ejercicio9CC.cadena9();
          
                     break;
                 //---------------------------------ARRAYS-----------------------------------
                 case 49:
+                    //Ejercicio 1A
+                    System.out.println("\nEjercicio 1A");
+                    Ejercicio1A.ejercicio1A();
          
                     break;   
                 case 50:
+                    //Ejercicio 2A
+                    System.out.println("\nEjercicio 2A");
+                    Ejercicio2A.ejercicio2A();
          
                     break;
                 case 51:
@@ -630,14 +663,21 @@ public class App {
                     System.out.println();
                     break;
                 case 56:
-                    
+                    //EJERCICIO 3L
+                    System.out.println("\nLoading 3");
+                    Ejercicio3L.loading3();
+                    System.out.println();
+            
                     break;
                 case 57:
                     // Ejercicio 4L
                     
                     break;
                 case 58:
-         
+                    // Ejercicio 5L
+                    System.out.println( "/nLoading 5");
+                    Ejercicio5L.loading5();
+                    System.out.println();
                     break;
                 case 59:
                     // Ejercicio 6L
@@ -653,7 +693,10 @@ public class App {
                     
                     break;
                 case 62:
-         
+                    // Ejercicio 9L
+                    System.out.println("/nLoading 9");
+                    Ejercicio9L.loading9();
+                    System.out.println();
                     break;
                 case 63:
                     // Ejercicio 10L

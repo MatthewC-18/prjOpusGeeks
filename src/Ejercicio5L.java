@@ -1,7 +1,7 @@
 import java.util.concurrent.TimeUnit;
 
-public class Loading5 {
-    public static void main(String[] args) {
+public class Ejercicio5L {
+    public static void loading5() {
         ejecutarLoading5();
     }
 

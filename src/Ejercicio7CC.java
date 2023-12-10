@@ -7,8 +7,8 @@ import java.util.Scanner;
 *FECHA: 01/12/2023.
 
 */
-public class Cadena7 {
-    public  void main(String[] args) {
+public class Ejercicio7CC{
+    public static void cadena7() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese una frase: ");
