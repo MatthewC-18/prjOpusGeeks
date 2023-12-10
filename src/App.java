@@ -44,10 +44,10 @@ public class App {
             System.out.println("20. Ejercicio 9SC");
             
             System.out.println("--------------------------------FIGURAS------------------------------------");
-            System.out.println("21. ");
-            System.out.println("22. ");
-            System.out.println("23. ");
-            System.out.println("24. ");
+            System.out.println("21. Ejercicio 1F");
+            System.out.println("22. Ejercicio 2F");
+            System.out.println("23. Ejercicio 3F");
+            System.out.println("24. Ejercicio 4F");
             System.out.println("25. Ejercicio 5F");
             System.out.println("26. Ejercicio 6F");
             System.out.println("27. Ejercicio 7F");
@@ -56,8 +56,8 @@ public class App {
             System.out.println("30. Ejercicio 10F");
             System.out.println("31. Ejercicio 11F");
             System.out.println("32. Ejercicio 12F");
-            System.out.println("33. ");
-            System.out.println("34. ");
+            System.out.println("33. Ejercicio 13F");
+            System.out.println("34. Ejercicio 14F");
             System.out.println("35. Ejercicio 15F");
             System.out.println("36. Ejercicio 16F");
             System.out.println("37. Ejercicio 17F");
@@ -76,8 +76,8 @@ public class App {
             System.out.println("48. ");
             
             System.out.println("---------------------------------ARRAYS-----------------------------------");
-            System.out.println("49. ");
-            System.out.println("50. ");
+            System.out.println("49. Ejercicio1A");
+            System.out.println("50. Ejercicio2A");
             System.out.println("51. Ejercicio3A");
             System.out.println("52. ");
             System.out.println("53. ");
@@ -85,20 +85,20 @@ public class App {
             System.out.println("---------------------------------LOADINGS---------------------------------");  
             System.out.println("54. Ejercicio 1L");
             System.out.println("55. Ejercicio 2L");
-            System.out.println("56. ");
+            System.out.println("56. Ejercicio 3L");
             System.out.println("57. ");
-            System.out.println("58. ");
+            System.out.println("58. Ejercicio 4L");
             System.out.println("59. ");
             System.out.println("60. ");
             System.out.println("61. Ejercicio 8L");
-            System.out.println("62. ");
+            System.out.println("62. Ejercicio 9L");
             System.out.println("63. Ejercicio 10L");
             
             System.out.println("---------------------------------RECURSION---------------------------------");
-            System.out.println("64. ");
+            System.out.println("64. Ejercicio 1R");
             System.out.println("65. Ejercicio 2R");
             System.out.println("66. Ejercicio 3R");
-            System.out.println("67. ");
+            System.out.println("67. Ejercicio 4R");
             System.out.println("68. Ejercicio 5R");
             System.out.println("69. Ejercicio 6R");
             
