@@ -7,8 +7,8 @@ import java.util.Scanner;
 *FECHA: 01/12/2023.
 
 */
-public class Loading3{
-    public static void main(String[] args) {
+public class Loading3 {
+    public void ejecutarLoading3() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese un carácter: ");

@@ -2,11 +2,15 @@ import java.util.Scanner;
 /**
 *Copyright (C) 2K23, grupo2
 *(grupo2 - Opus Geeks), matthewcedeno92@gmail.com
-*@Version 1.0.
+* 1.0.
 *@author: Matthew Cedeno.
 *FECHA: 01/12/2023.
 
 */
+/**
+ * *@Version 1.0.
+*@author: Matthew Cedeno.
+ */
 public class Figura1{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,10 +25,10 @@ public class Figura1{
                 if (i == 0 || i == size - 1 || j == 0 || j == size - 1) {
                     System.out.print("* ");
                 } else {
-                    System.out.print("  "); // Espacio en blanco para el interior
+                    System.out.print("  "); 
                 }
             }
-            System.out.println(); // Cambiar de línea después de cada fila
+            System.out.println(); 
         }
 
         scanner.close();

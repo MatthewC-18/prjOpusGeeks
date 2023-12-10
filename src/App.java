@@ -125,9 +125,8 @@ public class App {
             System.out.println();
 
             //---------------------------------- SERIES DE CARACTERES --------------------------------------------------
-            System.out.println("********************************");
+
             System.out.println("EJERCICIOS POLIRETOS");
-            System.out.println("SERIE caracteres");
             // EJERCICIO 1
             System.out.println("\nSerie 1 de Caracteres:");
             objParteIF.serie1Char(nPosiciones);
@@ -138,90 +137,56 @@ public class App {
             Ejercicio3SC oEjercicio3SC = new Ejercicio3SC();
             System.out.println("\nSerie 3 de Caracter:");
             oEjercicio3SC.ejercicio3SCFOR(nPosiciones);
+            
+
             // EJERCICIO 4
             Ejercicio4SC oEjercicio4SC = new Ejercicio4SC();
             System.out.println("\nSerie 4 de Caracter:");
             oEjercicio4SC.ejercicio4SCFOR(nPosiciones);
+
+
             // EJERCICIO 5
             Ejercicio5SC oEjercicio5SC = new Ejercicio5SC();
             System.out.println("\nSerie 5 de Caracteres:");
             oEjercicio5SC.ejercicio5SCFOR(nPosiciones);
             // EJERCICIO 6
-            System.out.println("\nSerie 6 de Caracter:");
-            //Ejercicio6SC oEjercicio6SC = new Ejercicio6SC();
-            //oEjercicio6SC.Ejercicio6SCFOR(nPosiciones);
+
             // EJERCICIO 7
             System.out.println("\nSerie 7 de Caracteres:");
             objParteIF.serie7Char(nPosiciones);        
             // EJERCICIO 8
             Ejercicio8SC oEjercicio8SC = new Ejercicio8SC();
             System.out.println("\nSerie 8 de Caracter:");
-            oEjercicio8SC.ejercicio8SCFOR(nPosiciones);
-<<<<<<< HEAD
-            FiguraMT oFiguraMT = new FiguraMT();
-            System.out.println("\nFiguras:");
-            oFiguraMT.FiguraMT(nPosiciones);
-=======
-            System.out.println();
->>>>>>> e9f6a452fc40e961bf1e2f2205df2f043f8c81c4
+            
+
+            
             // EJERCICIO 9
-            
-            //---------------------------------------- FIGURAS --------------------------------------------------------
-            System.out.println();
-            System.out.println("FIGURAS");            
-            //EJERCICIO 9
-            System.out.println("\nFigura 9");
-            objParteIF.figura9(nPosiciones);
-            //FIGURA 10
-            System.out.println("\nFigura 10");
-            objParteIF.figura10(nPosiciones);
-            //FIGURA 11 (PROBLEMA)
-            //FIGURA 12
-            System.out.println("\nFigura 12");
-            objParteIF.figura12(nPosiciones);
-            //FIGURA 17 (PROBLEMA)
-            //FIGURA 18
-            System.out.println("\nFigura 18");
-            objParteIF.figura18(nPosiciones);
-            
-            //---------------------------------------- CADENA DE CARACTERES ----------------------------------------------------------
-            System.out.println();
-            System.out.println("CADENA de caracteres");
-            //EJERCICIO 4
-            System.out.println("\nCadena 4");
-            objParteIF.cadena4();
-            //EJERCICIO 5
-            System.out.println("\nCadena 5");
-            objParteIF.cadena5();
-            //EJERCICIO 6
-            System.out.println("\nCadena 6");
-            objParteIF.cadena6();
-            
-            
+
             //---------------------------------------- ARRAYS ----------------------------------------------------------
-            //---------------------------------------- LOAGINGS --------------------------------------------------------
-            System.out.println();
-            System.out.println("Loadings");            
+            //---------------------------------------- LOAGINGS ----------------------------------------------------------
             //EJERCICIO 1
             System.out.println("\nLoading 1:");
             objParteIF.loading1();
             //EJERCICIO 2
             System.out.println("\nLoading 2");
             objParteIF.loading2();
-            System.out.println();
-            //EJERCICIO 7
-            //---------------------------------------- LOAGINGS --------------------------------------------------------
-            System.out.println();
-            System.out.println("RECURSIVIDAD");
-            //SUMA RECURSIVA
-            System.out.println("\nSuma recursiva");
-            int resultado1 = objParteIF.sumaRecursiva(9, 5);
-            System.out.println(resultado1);
-            //MULTIPLICACION RECURSIVA
-            System.out.println("\nMultiplicacion recursiva");
-            int resultado2 = objParteIF.multiplicacionRecursiva(3, 9);
-            System.out.println(resultado2);
+            //EJERCICIO 3
+            Loading3 oloading3 = new Loading3();
+            System.out.println("/nLoading 3:");
+            oloading3.ejecutarLoading3();
+            //EJERCICIO 4
+            //Ejercicio5
+            Loading5 oloading5 = new Loading5();
+            System.out.println("/nLoading 5:");
+            oloading5.ejecutarLoading5();
 
+            
+            //EJERCICIO 7
+            //Ejercicio 9
+            Loading9 oLoading9 =new Loading9();
+            System.out.println("/nLoading 9:");
+            oLoading9.ejecutarLoading9();
+        
         }
         System.out.println();
     }
