@@ -32,16 +32,15 @@ public class App {
             System.out.println("9. Ejercicio 9SN");
             System.out.println("10. Ejercicio 10SN");
             System.out.println("11. Ejercicio 11SN");
-            
             System.out.println("-----------------------SERIES DE CARACTERES--------------------------------");
             System.out.println("12. Ejercicio 1SC");
             System.out.println("13. Ejercicio 2SC");
-            System.out.println("14. ");
-            System.out.println("15. ");
-            System.out.println("16. ");
+            System.out.println("14. Ejercicio 3SC");
+            System.out.println("15. Ejercicio 4SC");
+            System.out.println("16. Ejercicio 5SC");
             System.out.println("17. Ejercicio 6SC");
             System.out.println("18. Ejercicio 7SC");
-            System.out.println("19. ");
+            System.out.println("19. Ejercicio 8SC");
             System.out.println("20. Ejercicio 9SC");
             
             System.out.println("--------------------------------FIGURAS------------------------------------");
@@ -197,6 +196,8 @@ public class App {
                     System.out.println("\nSerie 8 con while: ");
                     oEjercicio8.Ejercicio8While(nPosiciones);
                     System.out.println();
+                    break;
+                case 9:
                     System.out.println("\nSerie 9 con for:"); 
                     Ejercicio9.Ejercicio9For(nPosiciones); 
                     System.out.println("\nSerie 9 con do: ");
@@ -204,9 +205,6 @@ public class App {
                     System.out.println("\nSerie 9 con while: ");
                     Ejercicio9.Ejercicio9DoWhile(nPosiciones);
                     System.out.println();
-                    break;
-                case 9:
-                    
                     break;
                 case 10:
                     // Ejercicio 10
