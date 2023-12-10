@@ -79,7 +79,7 @@ public class App {
             System.out.println("---------------------------------ARRAYS-----------------------------------");
             System.out.println("49. ");
             System.out.println("50. ");
-            System.out.println("51. ");
+            System.out.println("51. Ejercicio3A");
             System.out.println("52. ");
             System.out.println("53. ");
             
@@ -443,7 +443,9 @@ public class App {
          
                     break;
                 case 51:
-         
+                    //Ejercicio 3A
+                    System.out.println("\nArrays 3:");
+                    Ejercicio3A.arrayGrafico();
                     break;
                 case 52:
          
