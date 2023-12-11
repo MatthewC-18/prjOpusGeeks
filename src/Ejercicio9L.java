@@ -48,8 +48,5 @@ public class Ejercicio9L {
                 System.out.println("\t" + porcentaje + "%");
             }
         }
-
-        // Cerrar el scanner al finalizar
-        scanner.close();
     }
 }
