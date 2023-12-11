@@ -15,10 +15,10 @@ public class Ejercicio4CC {
         String cadena = new String();
         String letra = new String();
         System.out.println("Ingrese una frase");
-        Scanner sc = new Scanner(System.in);
-        cadena = sc.nextLine().toLowerCase();
+        Scanner ingreso = new Scanner(System.in);
+        cadena = ingreso.nextLine().toLowerCase();
         System.out.println("Ingrese la letra a eliminar:");
-        letra = sc.nextLine().toLowerCase();
+        letra = ingreso.nextLine().toLowerCase();
         String cadenaRem = cadena.replaceAll(letra, " ");
         System.out.println(cadenaRem);
     }

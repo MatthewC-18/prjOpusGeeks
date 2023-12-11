@@ -13,8 +13,8 @@ public class Ejercicio5CC {
     public static void cadena5 (){
         String cadena = new String();
         System.out.println("Ingrese una frase");
-        Scanner sc = new Scanner(System.in);
-        cadena = sc.nextLine().toLowerCase();
+        Scanner ingreso = new Scanner(System.in);
+        cadena = ingreso.nextLine().toLowerCase();
         char[] cadenachars = cadena.toCharArray();
         for (int i=0 ; i<cadenachars.length ; i++){
             if ((cadenachars[i] == 'a') || (cadenachars[i]=='e')|| (cadenachars[i]=='i') || (cadenachars[i]=='o') || (cadenachars[i]=='u')){
@@ -23,7 +23,7 @@ public class Ejercicio5CC {
         }
         String nuevaCadenaString = String.valueOf(cadenachars);
         StringBuilder reversaCadena = new StringBuilder(nuevaCadenaString);
-        reversaCadena.reverse();;
+        reversaCadena.reverse();
         System.out.println(reversaCadena);
     }
 }

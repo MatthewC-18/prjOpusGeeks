@@ -567,7 +567,7 @@ public class App {
                 case 66:
                     //MULTIPLICACION RECURSIVA
                     System.out.println("\nMultiplicacion recursiva");
-                    int multiplicacion = Ejercicio3R.multiplicacionRecursiva(3, 7);
+                    int multiplicacion = Ejercicio3R.multiplicacionRecursiva(-3, -7);
                     System.out.println(multiplicacion);
                     break;
                 case 67:

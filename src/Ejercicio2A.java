@@ -14,14 +14,14 @@ public class Ejercicio2A {
         String nombreCompleto = "Matthew Cedeno";
 
         // Ingrese el tamaño de la matriz
-        Scanner scanner = new Scanner(System.in);
+        Scanner Ejercicio2Aing = new Scanner(System.in);
         System.out.print("Ingrese el tamaño de la matriz: ");
-        int tamano = scanner.nextInt();
-        scanner.nextLine(); // Consumir la nueva línea pendiente después del nextInt
+        int tamano = Ejercicio2Aing.nextInt();
+        Ejercicio2Aing.nextLine(); // Consumir la nueva línea pendiente después del nextInt
 
         // Ingrese el caracter
         System.out.print("Ingrese el caracter para las iniciales: ");
-        char caracter = scanner.nextLine().charAt(0);
+        char caracter = Ejercicio2Aing.nextLine().charAt(0);
 
         // Crear e imprimir la matriz de iniciales
         imprimirMatrizIniciales(nombreCompleto, tamano, caracter);
