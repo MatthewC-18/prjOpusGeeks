@@ -16,13 +16,12 @@
  */
 public class Ejercicio3F {
     public static void figura3(int escalones) {
-        for (int i = 1; i <= escalones; i++) {
+        for (int i = 0; i < escalones; i++) {
+            for (int j = 0; j < i+1; j++) {
+                System.out.print("*");
             
-            // Imprimir asterisco
-            System.out.print("*");
-
-            // Cambiar de línea después de imprimir cada nivel del triángulo
-            System.out.println();
+        }
+         System.out.println();
         }
     }
 }
