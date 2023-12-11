@@ -1,6 +1,8 @@
 public class Ejercicio1L {
     /**    L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
      / 100%
+     *Copyright (C) 2K23, grupo2
+     *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
      * @autor Ismael Freire
      * @version 2.0
      * @date 03/12/2023

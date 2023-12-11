@@ -4,7 +4,8 @@ public class Ejercicio2SC {
          *       1+1 2  2+1 3+2   5+3       8+5
          * @autor Ismael Freire
          * @version 1.0
-         */
+         * @date 0/12/2023
+        */
         int variable=1;
         int anterior=0;
         int auxiliar;

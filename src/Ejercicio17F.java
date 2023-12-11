@@ -6,6 +6,8 @@
                 0		0
             1				1
             ....
+ *Copyright (C) 2K23, grupo2
+ *(grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
  * @autor Ismael Freire
  * @version 2.0
  * @date 09/12/2023

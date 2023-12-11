@@ -9,6 +9,13 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
+            "projectName": "prjOpusGeeks_c41834b0"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
             "projectName": "prjOpusGeeks_f053bf5a"
         },
         {

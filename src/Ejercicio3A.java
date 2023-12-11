@@ -9,6 +9,8 @@ public class Ejercicio3A{
             2 |    a
             1 |  p
             0 |______________________
+     * Copyright (C) 2K23, grupo2
+     * (grupo2 - Opus Geeks), brandon.freire@epn.edu.ec
      * @autor Ismael Freire
      * @version 2.0
      * @date 10/12/2023
