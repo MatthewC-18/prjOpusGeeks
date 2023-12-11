@@ -1,14 +1,15 @@
 /**
 *Copyright (C) 2K23, grupo2
 *(grupo2 - Opus Geeks), matthewcedeno92@gmail.com
-*@Version 1.0.
-*@author: Matthew Cedeno.
-*FECHA: 01/12/2023.
-
 */
+/**
+ @Version 1.0.
+*@author: Matthew Cedeno.
+*@Date: 01/12/2023.
+ */
 public class Ejercicio1R {
-    public static void main(String[] args) {
-        int n = 5; // Puedes cambiar este valor según tu necesidad
+    public static void recursion1(String[] args) {
+        int n = 5; 
         long resultado = factorial(n);
         System.out.println("Factorial de " + n + " es: " + resultado);
     }

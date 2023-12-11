@@ -304,6 +304,11 @@ public class App {
          
                     break;
                 case 23:
+                    //Figura 3
+                    Scanner EjercicioF3 = new Scanner (System.in);
+                    System.out.println("Ingrese la cantidad de escalones: ");
+                    int escalones = EjercicioF3.nextInt();
+                    Ejercicio3F.figura3(escalones);
          
                     break;
                 case 24:
@@ -547,7 +552,9 @@ public class App {
                     break;
                 //---------------------------------RECURSION---------------------------------
                 case 64:
-                    
+                    //Recursion 1
+                    System.out.println("Factorial recursivoA");
+                    Ejercicio1R.recursion1(args);
                     break;
                 case 65:
                     //SUMA RECURSIVA 2R
@@ -562,7 +569,9 @@ public class App {
                     System.out.println(multiplicacion);
                     break;
                 case 67:
-         
+                    //Potencia 
+                    System.out.println("/nPotencia recursiva");
+                    Ejercicio4R.recursion4(args);
                     break;
                 case 68:
                     // Ejercicio 5R

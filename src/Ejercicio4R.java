@@ -9,9 +9,9 @@
 *@author: Matthew Cedeno.
  */
 public class Ejercicio4R{
-    public static void main(String[] args) {
-        int base = 2;  // Puedes cambiar este valor según tu necesidad
-        int exponente = 5;  // Puedes cambiar este valor según tu necesidad
+    public static void recursion4(String[] args) {
+        int base = 2;  
+        int exponente = 5;  
 
         long resultado = potencia(base, exponente);
         System.out.println(base + " elevado a la " + exponente + " es: " + resultado);
