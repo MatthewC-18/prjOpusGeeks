@@ -46,7 +46,7 @@ public class App {
             System.out.println("--------------------------------FIGURAS------------------------------------");
             System.out.println("21. Ejercicio 1F");
             System.out.println("22. Ejercicio 2F");
-            System.out.println("23. ");
+            System.out.println("23. Ejercicio 3F");
             System.out.println("24. Ejercicio 4F");
             System.out.println("25. Ejercicio 5F");
             System.out.println("26. Ejercicio 6F");
